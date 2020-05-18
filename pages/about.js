@@ -1,15 +1,12 @@
-import React from 'react'
-import Nav from "../components/Nav";
-
-const About = () => {
-    return (
-        <>
-            <Nav/>
-            <div className="hero">
-                <h1 className="title">About</h1>
-            </div>
-        </>
-    )
-}
-
-export default About
+import Link from 'next/link'
+export default () => (
+    <div>
+        <div>About us</div>
+        <div>
+            Back to{' '}
+            <Link href="/" as={process.env.BACKEND_URL + '/'}>
+                <a>Home</a>
+            </Link>
+        </div>
+    </div>
+)
