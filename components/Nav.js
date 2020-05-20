@@ -1,18 +1,23 @@
 import Link from 'next/link'
+import React from "react";
 
-export default function Nav() {
+const Nav = () => {
     return (
         <nav>
             <ul className="flex justify-between items-center p-8">
                 <li>
-                    <Link href="/">
-                        <a className="text-blue-500 no-underline">Home</a>
+                    <Link href="/" as={process.env.BACKEND_URL + '/'}>
+                        <a className="text-blue no-underline">Home</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href={ '/about' } as={ process.env.BACKEND_URL + '/about' }><a>about</a></Link>
+                    <Link href={'/about'} as={process.env.BACKEND_URL + '/about'}>
+                        <a>About</a>
+                    </Link>
                 </li>
             </ul>
         </nav>
     )
 }
+
+export default Nav;

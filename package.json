@@ -17,8 +17,9 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-define": "latest",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.4.0",
-    "babel-plugin-transform-define": "latest"
+    "tailwind-bootstrap-grid": "^2.1.0",
+    "tailwindcss": "^1.4.0"
   }
 }
