@@ -10,7 +10,7 @@ const Slider = ({children}) => {
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 7000
         };
 

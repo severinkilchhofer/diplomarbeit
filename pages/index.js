@@ -1,3 +1,4 @@
+import ShopItem from '../components/ShopItem/ShopItem'
 import Nav from '../components/Nav/Nav'
 import Slider from "../components/Slider/Slider";
 
@@ -6,11 +7,17 @@ export default function IndexPage() {
         <>
             <Nav/>
             <div className="container">
-                <div className="row">
+                <div className="row pb-32">
                     <div className="col">
                         <h1 className="text-blue text-center font-black">Sustainable Fashion Rating</h1>
+                        <p className="text-center">Diplomarbeit von Severin Kilchhofer</p>
                     </div>
                 </div>
+
+                <div className="row pb-64">
+                    <ShopItem/>
+                </div>
+
             </div>
             <Slider>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
