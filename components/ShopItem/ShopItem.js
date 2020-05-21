@@ -6,7 +6,7 @@ const ShopItem = () => {
             <div className="shadow-lg rounded overflow-hidden m-4 sm:flex w-full">
                 <div
                     className="flex justify-center bg-gray m-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
-                    <img className="self-center p-16 md:p-10" src="/t-shirt-red.svg"
+                    <img className="self-center p-16 md:p-10" src="t-shirt-red.svg"
                          alt="Red T-Shirt Mountain One Product Illustration"/>
                 </div>
 
