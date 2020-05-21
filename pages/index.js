@@ -15,7 +15,11 @@ export default function IndexPage() {
                 </div>
 
                 <div className="row pb-64">
-                    <ShopItem/>
+                    <ShopItem brand={'The South Mountain'}
+                              name={'T-Shirt Mountain One'}
+                              description={'Das Männer T-Shirt in Kontrastfarbe und Rundhals ist aus regenerierten Fischernetzen und Nylon-Resten, sogenanntes ECONYL®-Garn hergestellt. Die T-Shirts von The South Mountain werden in der Schweiz unter fairen Arbeitsbedingungen und einem minimalen Transportweg produziert.'}
+                              price={65}
+                              rating={8}/>
                 </div>
 
             </div>
