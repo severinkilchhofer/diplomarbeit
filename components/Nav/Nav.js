@@ -7,7 +7,7 @@ const Nav = () => {
             <ul className="flex justify-between items-center p-8">
                 <li>
                     <Link href="/" as={process.env.BACKEND_URL + '/'}>
-                        <a className="text-blue no-underline">Home</a>
+                        <a className="text-blue no-underline">Intro</a>
                     </Link>
                 </li>
                 <li>
