@@ -1,8 +1,9 @@
 import Nav from "../components/Nav/Nav";
 import Energieverbrauch from "../components/Recherche/Energieverbrauch/Energieverbrauch";
+import Onlineshops from "../components/Recherche/Onlineshops/Onlineshops";
 
 export default () => (
-    <div>
+    <div style={{overflow: 'hidden'}}>
         <Nav currentOpen={'recherche'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
             <div className="container pt-32">
@@ -35,14 +36,13 @@ export default () => (
                     <Energieverbrauch/>
                 </div>
             </div>
-            <div className="row pt-32">
-                <div className="col-6">
-                    <h2>Erst einzelne Onlineshops machen auf das Thema aufmerksam.</h2>
-                </div>
-            </div>
         </div>
+        <Onlineshops/>
 
 
+        <div className="container pt-48">
+
+        </div>
         <div className="container pt-48">
 
         </div>
