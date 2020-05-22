@@ -3,29 +3,28 @@
 @tailwind base;
 @tailwind components;
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 h1 {
     @apply text-lg font-black pb-4;
-    font-family: 'Inter', sans-serif;
 }
 
 h2 {
     @apply text-base font-normal pb-4;
-    font-family: 'Inter', sans-serif;
 }
 
 h3 {
     @apply text-lg font-normal pb-4;
-    font-family: 'Inter', sans-serif;
 }
 
 h5 {
     @apply text-base font-black pb-4;
-    font-family: 'Inter', sans-serif;
 }
 
 p {
     @apply text-base font-normal;
-    font-family: 'Inter', sans-serif;
 }
 
 

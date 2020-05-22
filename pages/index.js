@@ -25,15 +25,13 @@ export default function IndexPage() {
             </div>
             <Slider>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74 auf 130
-                        Milliarden
-                        Kleidungsstücken mehr als verdoppelt.</h1>
+                    <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74 auf
+                        130 Milliarden Kleidungsstücken mehr als verdoppelt.</h1>
                     <p>(Euromonitor, 2020)</p>
                 </div>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000 Mikrofasern aus
-                        unserer Kleidung ins
-                        Abwasser gelangen.</h1>
+                    <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000 Mikrofasern
+                        aus unserer Kleidung ins Abwasser gelangen.</h1>
                     <p>(Napper und Thompson, 2016)</p>
                 </div>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
