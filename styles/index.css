@@ -24,7 +24,7 @@ h5 {
 }
 
 p {
-    @apply text-base font-normal;
+    @apply text-baseMobile font-normal;
 }
 
 
@@ -38,6 +38,9 @@ p {
     }
     h5 {
         @apply text-lg;
+    }
+    p {
+        @apply text-base;
     }
 }
 

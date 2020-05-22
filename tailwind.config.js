@@ -7,6 +7,7 @@ module.exports = {
         fontSize: {
             xs: ['.75rem', '1.5rem'],
             sm: ['.875rem', '1.5rem'],
+            baseMobile: ['1rem', '1.5rem'],
             base: ['1.2rem', '1.75rem'],
             lg: ['1.5rem', '2.25rem'],
             lgr: ['1.75rem', '3rem'],

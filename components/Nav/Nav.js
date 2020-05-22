@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, {useState, useEffect} from "react";
 
-const Nav = () => {
+const Nav = (props) => {
     const [open, enableNav] = useState(false);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const Nav = () => {
 
 
     return (
-        <nav className="h-24 ">
+        <nav className={`bg-${props.bgColor} h-24`}>
             <div className="block z-50 relative float-right pt-4 pr-4">
                 <button onClick={() => enableNav(!open)} className="px-3 py-2">
                     {open
@@ -27,13 +27,13 @@ const Nav = () => {
             <div className={`${open ? `block` : `hidden`} `}>
                 <div className="h-screen w-screen z-10 top-0 left-0 bg-blue overflow-x-hidden fixed">
                     <ul className="table m-10 sm:m-auto text-white font-bold text-lg sm:text-xl pt-10 sm:pt-32">
-                        <li className="pb-4 hover:text-red">
+                        <li className={`${props.currentOpen === 'intro' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
                             <Link href={'/'} as={process.env.BACKEND_URL + '/'}>
                                 <a>Intro</a>
                             </Link>
                         </li>
-                        <li className="pb-4 hover:text-red">
-                            <Link href={'/about'} as={process.env.BACKEND_URL + '/about'}>
+                        <li className={`${props.currentOpen === 'recherche' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
+                            <Link href={'/recherche'} as={process.env.BACKEND_URL + '/recherche'}>
                                 <a>Recherche und Erkenntnisse</a>
                             </Link>
                         </li>

@@ -5,7 +5,7 @@ import Slider from "../components/Slider/Slider";
 export default function IndexPage() {
     return (
         <>
-            <Nav/>
+            <Nav currentOpen={'intro'} bgColor={'white'}/>
             <div className="container">
                 <div className="row pb-32">
                     <div className="col">
