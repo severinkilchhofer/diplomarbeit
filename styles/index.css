@@ -62,6 +62,7 @@ p {
 @tailwind utilities;
 
 
+/*Animation*/
 .section {
     /*height: 0;*/
     /*background: linear-gradient(160deg, #f47c66 0%, #e51906 100%);*/
@@ -87,3 +88,17 @@ p {
     height: 100%;
     width: 100%;
 }
+
+
+/*Table*/
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+    padding-left: 0; }
+th:last-child,
+td:last-child {
+    padding-right: 0; }
