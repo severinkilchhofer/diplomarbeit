@@ -37,8 +37,8 @@ const Nav = (props) => {
                                 <a>Recherche und Erkenntnisse</a>
                             </Link>
                         </li>
-                        <li className="pb-4 hover:text-red">
-                            <Link href={'/about'} as={process.env.BACKEND_URL + '/about'}>
+                        <li className={`${props.currentOpen === 'sff' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
+                            <Link href={'/sff'} as={process.env.BACKEND_URL + '/sff'}>
                                 <a>Sustainable Fashion Foundation</a>
                             </Link>
                         </li>

@@ -22,19 +22,19 @@ const Onlineshops = () => {
                                         <div className="flex flex-row" style={{width: '2500px'}}>
                                             <div className="m-4">
                                                 <img className="w-full h-auto shadow-lg" src="zalando.png" alt=""/>
-                                                <p className="text-sm p-4">-> Präsentation Nachhaltiger Kleidung</p>
+                                                <p className="text-sm p-4">-> Präsentiert vermehrt nachhaltige Kleidung</p>
                                             </div>
                                             <div className=" m-4">
                                                 <img className="w-full h-auto shadow-lg" src="neumuhle.png" alt=""/>
-                                                <p className="text-sm p-4">-> Transparenz in der Produktbeschreibung</p>
+                                                <p className="text-sm p-4">-> Sehr transparente Produktbeschreibung im Onlineshop</p>
                                             </div>
                                             <div className=" m-4">
                                                 <img className="w-full h-auto shadow-lg" src="rrrevolve.png" alt=""/>
-                                                <p className="text-sm p-4">-> Transparenz in der Produktbeschreibung</p>
+                                                <p className="text-sm p-4">-> Zeigt fairness und transparenz im Onlineshop auf</p>
                                             </div>
                                             <div className=" m-4">
                                                 <img className="w-full h-auto shadow-lg" src="circle.png" alt=""/>
-                                                <p className="text-sm p-4">-> Transparenz in der Produktbeschreibung</p>
+                                                <p className="text-sm p-4">-> Klare Angaben der Lieferkette</p>
                                             </div>
                                         </div>
                                     </div>
