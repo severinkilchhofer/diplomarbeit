@@ -13,7 +13,7 @@ export default () => (
                         <h3 className="text-white">Problemstellung</h3>
                         <p className="text-white">Heutzutage werden unzählige Textilprodukte online bestellt. Der Bedarf
                             auf
-                            Nachhaltige Kleidung und eine transparente Kommunikation der Onlinehändler ist so hoch wie
+                            nachhaltige Kleidung und eine transparente Kommunikation der Onlinehändler ist so hoch wie
                             noch
                             nie. Gleichzeitig informieren sich Leute gerne vermehrt über den Herstellungsort und die
                             Materialien der Kleider. In Ladengeschäften ist das Entehmen dieser Produktinformationen auf

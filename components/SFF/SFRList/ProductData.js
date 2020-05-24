@@ -31,7 +31,6 @@ export const ProductData = [
                 {id: 1, info: 'Jahresurlaub & Feiertage', bspData: '0.2'},
                 {id: 2, info: 'Gesundheit & Sicherheit', bspData: '0.8'},
                 {id: 3, info: 'Lebensbedingungen & Schlafsäle', bspData: '0.4'},
-                {id: 4, info: 'Mutterschaftsrechte & Elternurlaub', bspData: '0.0'},
                 {id: 5, info: 'Mutterschaftsrechte & Elternurlaub', bspData: '0.0'},
                 {id: 6, info: 'Kinderarbeit', bspData: '1.0'},
                 {id: 7, info: 'Gesellschaftliches Engagement', bspData: '0.3'},

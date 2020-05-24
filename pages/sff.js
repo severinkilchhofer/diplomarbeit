@@ -17,8 +17,8 @@ export default () => (
                         <h1 className="text-white font-black">Meine Lösung für mehr Online Transparenz im
                             Textilhandel</h1>
                         <p className="text-white">Im Rahmen dieser Diplomarbeit habe ich eine fiktive Stiftung
-                            Sustainable Fashion Foundatino erfunden. Diese dient dazu, mein Konzept zu erleutern und
-                            beispielhaft aufzuzeigen, wie ein mein System funktioniert. </p>
+                            «Sustainable Fashion Foundation» erfunden. Mit dieser Stiftung zeige ich auf, wie eine neue
+                            Regelung im Online Textilhandel funktionieren könnte.</p>
                     </div>
                 </div>
 
@@ -71,9 +71,11 @@ export default () => (
                     <p className="pb-4">Um eine verhätnismässige Berechnung durchzuführen, werden die Kategorien
                         unterschiedlich
                         gewichtet. Alle markenrelevanten Kategorien sind mit 30% gewichtet. Diese Kategorien decken
-                        bereits Art und Weise, wie Bekleidung hergestellt ab. Die Informationen über das Produkt selbst
-                        werden ein Zentel gewichtet. Diese habe ich in das Rating reingenommen, um das Rating einem
-                        konkreten Produkt zuzuweisen und um die konkreten Materialien auszuweisen. So kann es nicht
+                        bereits die Art und Weise ab, wie Bekleidung hergestellt wird. Die Informationen über das
+                        Produkt selbst
+                        werden mit 10% gewichtet. Diese habe ich in das Rating reingenommen, um das Rating einem
+                        konkreten Produkt zuzuweisen. Zudem kann ich damit die konkreten Materialien ausweisen. So kann
+                        es nicht
                         passieren, dass eine Marke, welche bei einem Pullover Bio Baumwolle verwendet dasselbe Rating
                         erhält, wie eine Winterjacke der gleichen Marke, mit Pelz aus schlechter Tierhaltung.</p>
                     <p>In der folgenden Übersicht werden die Kategorieeigenschaften für die Punktevergabe eines
