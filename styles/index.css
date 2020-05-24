@@ -20,7 +20,7 @@ h3 {
 }
 
 h5 {
-    @apply text-base font-black pb-4;
+    @apply text-base font-black pb-4 text-blue;
 }
 
 p {
@@ -102,3 +102,7 @@ td:first-child {
 th:last-child,
 td:last-child {
     padding-right: 0; }
+
+tbody tr:first-child {
+    @apply text-red font-bold;
+}
