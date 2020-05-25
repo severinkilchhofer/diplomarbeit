@@ -4,7 +4,7 @@ import Shirt from "../Shirt/Shirt";
 const ShopItem = (props) => {
     return (
         <section className="m-2 leading-normal">
-            <div className="shadow-xl rounded overflow-hidden m-4 sm:flex w-full">
+            <div className="shadow-xl rounded overflow-hidden m-4 sm:flex">
                 <div className="flex justify-center bg-gray m-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
                     <Shirt fill={'#D1495B'}/>
                 </div>

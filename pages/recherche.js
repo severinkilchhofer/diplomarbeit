@@ -1,6 +1,7 @@
 import Nav from "../components/Nav/Nav";
 import Energieverbrauch from "../components/Recherche/Energieverbrauch/Energieverbrauch";
 import Onlineshops from "../components/Recherche/Onlineshops/Onlineshops";
+import FooterNav from "../components/FooterNav/FooterNav";
 
 export default () => (
     <div style={{overflow: 'hidden'}}>
@@ -83,8 +84,7 @@ export default () => (
             </div>
 
         </div>
-        <div className="container pt-48">
-
-        </div>
+        <FooterNav navTextBack='Intro' navLinkBack='index'
+                   navTextForward='Sustainable Fashion Foundation' navLinkForward='sff'/>
     </div>
 )

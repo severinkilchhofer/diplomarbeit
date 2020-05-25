@@ -1,10 +1,10 @@
 import React, {useState} from "react"
 
-const Tabs = (props) => {
+const DataTabs = (props) => {
 
-    const [visibleTab, setVisibleTab] = useState(props.titleList[0].id)
+    const [visibleTab, setVisibleTab] = useState(props.data[0].id)
 
-    const listTitles = props.titleList.map((item) =>
+    const listTitles = props.data.map((item) =>
         <li id={item.id}
             onClick={() => setVisibleTab(item.id)}
             className={`${visibleTab === item.id ? `border-b-2 border-blue text-blue ` : `border-b-2 border-gray text-gray`} flex-1 mr-2 hover:border-border-b-2 hover:border-blue hover:text-blue cursor-pointer`}>
@@ -12,7 +12,7 @@ const Tabs = (props) => {
         </li>
     )
 
-    const listContent = props.titleList.map((item) =>
+    const listContent = props.data.map((item) =>
         <div id={item.id} style={visibleTab === item.id ? {} : {display: 'none'}}>
             {item.tabContent.rows.map(el =>
                 <tr id={el.id} className="row">
@@ -49,4 +49,4 @@ const Tabs = (props) => {
 
 }
 
-export default Tabs;
+export default DataTabs;

@@ -1,6 +1,7 @@
 import ShopItem from '../components/ShopItem/ShopItem'
 import Nav from '../components/Nav/Nav'
 import Slider from "../components/Slider/Slider";
+import FooterNav from "../components/FooterNav/FooterNav";
 
 export default function IndexPage() {
     return (
@@ -69,9 +70,7 @@ export default function IndexPage() {
                     </div>
                 </div>
             </div>
-            <div className="container pt-48">
-
-            </div>
+            <FooterNav navTextForward='Recherche und Erkenntnisse' navLinkForward='recherche'/>
         </>
     )
 }

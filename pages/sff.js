@@ -3,12 +3,15 @@ import Marktstandard from "../components/SFF/Marktstandard/Marktstandard";
 import Textilrating from "../components/SFF/Textilrating/Textilrating";
 import SFRList from "../components/SFF/SFRList/SFRList";
 import Ratingzusammenstellung from "../components/SFF/Ratingzusammenstellung/Ratingzusammenstellung";
-import Tabs from "../components/Tabs/Tabs";
+import DataTabs from "../components/SFF/DataTabs/DataTabs";
 import {ProductData} from "../components/SFF/SFRList/ProductData";
 import Ratingkategorie from "../components/SFF/Ratingkategorie/Ratingkategorie";
+import MehrwertTabs from "../components/SFF/MehrwertTabs/MehrwertTabs";
+import {MehrwertData} from "../components/SFF/MehrwertTabs/MehrwertData";
+import FooterNav from "../components/FooterNav/FooterNav";
 
 export default () => (
-    <div>
+    <>
         <Nav currentOpen={'sff'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
             <div className="container pt-32">
@@ -58,7 +61,7 @@ export default () => (
 
             <div className="row pt-32">
                 <div className="lg:col-12">
-                    <Tabs titleList={ProductData}/>
+                    <DataTabs data={ProductData}/>
                 </div>
 
                 <div className="pt-32 lg:offset-2 lg:col-8">
@@ -177,9 +180,17 @@ export default () => (
                 </div>
             </div>
 
-
+            <div className="row">
+                <div className="pt-32 pb-4 lg:offset-2 lg:col-8">
+                    <h2>Welchen Mehrwert bietet die Sustainable Fashion Foundation?</h2>
+                </div>
+                <div className="lg:col-12">
+                    <MehrwertTabs data={MehrwertData}/>
+                </div>
+            </div>
         </div>
 
-        <div className="container pt-64" id={'rating'}></div>
-    </div>
+        <FooterNav navTextBack='Recherche und Erkenntnisse' navLinkBack='recherche'
+                   navTextForward='Eigenes Rating erstellen' navLinkForward='rating'/>
+    </>
 )
