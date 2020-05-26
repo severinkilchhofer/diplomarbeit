@@ -17,6 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-gsap": "^2.2.1",
+    "react-hook-form": "^5.7.2",
     "react-no-ssr": "^1.1.0",
     "react-scrollmagic": "^2.2.0",
     "react-slick": "^0.26.1",
