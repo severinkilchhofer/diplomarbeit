@@ -1,6 +1,8 @@
 import Nav from "../components/Nav/Nav";
-import React from 'react'
+import React, {useState} from 'react'
 import CreateRating from "../components/Rating/CreateRating/CreateRating";
+import MultiStepForm from "../components/Rating/MultiStepForm/MultiStepForm";
+import CreateMuA from "../components/Rating/CreateMuA/CreateMuA";
 
 export default () => (
     <>
@@ -20,11 +22,20 @@ export default () => (
                 </div>
                 <div className="row pt-24">
                     <div className="lg:col-6 text-center sm:text-left">
-                        <button className="p-6 bg-white text-blue font-bold rounded">Eigenes Product erfassen</button>
+                        <button className="p-6 bg-white text-blue font-bold rounded">Eigenes Produkt erfassen</button>
                     </div>
                 </div>
+
             </div>
         </div>
-        <CreateRating/>
+
+        <div className="container">
+                <MultiStepForm>
+                    <CreateMuA/>
+                    <CreateRating/>
+                </MultiStepForm>
+        </div>
+
+
     </>
 )
