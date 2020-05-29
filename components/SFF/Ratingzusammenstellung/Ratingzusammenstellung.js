@@ -5,8 +5,8 @@ const Ratingzusammenstellung = () => {
     return (
         <section className="p-2 bg-lightblue rounded">
             <div className="overflow-hidden sm:flex w-full">
-                <div className="pt-4 h-auto w-1/2 sm:w-56 md:w-1/3 flex-none overflow-hidden">
-                    <Shirt fill={'#D1495B'}/>
+                <div className="pt-6 p-5 h-auto w-1/2 sm:w-56 md:w-1/3 flex-none overflow-hidden">
+                    <Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>
                 </div>
 
                 <div className="pt-4 sm:pl-6">

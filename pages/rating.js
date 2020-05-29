@@ -6,7 +6,7 @@ export default () => (
     <>
         <Nav currentOpen={'rating'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
-            <div className="container pt-32">
+            <div className="container sm:pt-32">
                 <div className="row flex">
                     <div className="lg:col-6">
                         <h1 className="text-white font-black">Eigenes Rating erstellen</h1>
@@ -19,7 +19,7 @@ export default () => (
                     </div>
                 </div>
                 <div className="row pt-24">
-                    <div className="lg:col-6">
+                    <div className="lg:col-6 text-center sm:text-left">
                         <button className="p-6 bg-white text-blue font-bold rounded">Eigenes Product erfassen</button>
                     </div>
                 </div>
