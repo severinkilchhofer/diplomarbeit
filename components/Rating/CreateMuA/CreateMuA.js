@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useForm} from "react-hook-form";
 
-const CreateMuA = () => {
+const CreateMuA = (props) => {
 
     const [productState, setProductState] = useState(() => {
             if (typeof window !== 'undefined') {
@@ -100,9 +100,14 @@ const CreateMuA = () => {
 
                     </div>
                 </div>
-                <div className="flex items-center justify-between pt-24">
-                    <button className="p-4 bg-blue text-white font-bold rounded"
-                            type="submit">Speichern
+                <div className="flex items-center justify-end pt-24">
+                    <button className="p-4 m-4 bg-white text-blue font-bold rounded border-2 border-blue"
+                            type="submit"
+                            onClick={props.previousStep}>Zurück
+                    </button>
+                    <button className="p-4 m-4 bg-blue text-white font-bold rounded border-2 border-blue"
+                            type="submit"
+                            onClick={props.nextStep}>Weiter
                     </button>
                 </div>
             </form>

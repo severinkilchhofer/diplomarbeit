@@ -30,10 +30,7 @@ export default () => (
         </div>
 
         <div className="container">
-                <MultiStepForm>
-                    <CreateMuA/>
-                    <CreateRating/>
-                </MultiStepForm>
+                <MultiStepForm/>
         </div>
 
 
