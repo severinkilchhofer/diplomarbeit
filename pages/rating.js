@@ -1,8 +1,6 @@
 import Nav from "../components/Nav/Nav";
-import React, {useState} from 'react'
-import CreateRating from "../components/Rating/CreateRating/CreateRating";
+import React from 'react'
 import MultiStepForm from "../components/Rating/MultiStepForm/MultiStepForm";
-import CreateMuA from "../components/Rating/CreateMuA/CreateMuA";
 
 export default () => (
     <>
@@ -30,7 +28,7 @@ export default () => (
         </div>
 
         <div className="container">
-                <MultiStepForm/>
+            <MultiStepForm/>
         </div>
 
 
