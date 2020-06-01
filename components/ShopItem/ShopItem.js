@@ -17,7 +17,7 @@ const ShopItem = (props) => {
 
                     <div>
                         <button
-                            className={`bg-r${props.rating} w-16 h-16 rounded-tl-full rounded-bl-full rounded-br-full`}>
+                            className={`bg-rating${props.rating} w-16 h-16 rounded-tl-full rounded-bl-full rounded-br-full`}>
                             <p className="font-bold text-lg">{props.rating}</p>
                         </button>
                     </div>
