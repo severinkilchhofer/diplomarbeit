@@ -106,3 +106,7 @@ td:last-child {
 tbody tr:first-child {
     @apply text-red font-bold;
 }
+
+.rating8 {
+    @apply bg-rating8
+}
