@@ -107,6 +107,36 @@ tbody tr:first-child {
     @apply text-red font-bold;
 }
 
+.rating0 {
+    @apply bg-rating0
+}
+.rating1 {
+    @apply bg-rating1
+}
+.rating2 {
+    @apply bg-rating2
+}
+.rating3 {
+    @apply bg-rating3
+}
+.rating4{
+    @apply bg-rating4
+}
+.rating5 {
+    @apply bg-rating5
+}
+.rating6 {
+    @apply bg-rating6
+}
+.rating7 {
+    @apply bg-rating7
+}
 .rating8 {
     @apply bg-rating8
+}
+.rating9{
+    @apply bg-rating9
+}
+.rating10 {
+    @apply bg-rating10
 }
