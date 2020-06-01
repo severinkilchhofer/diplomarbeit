@@ -19,7 +19,7 @@ const Nav = (props) => {
                 <button onClick={() => enableNav(!open)} className="px-3 py-2">
                     {open
                         ? <svg height='20px' width='20px'  fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" x="0px" y="0px"><g><path d="M2 2l12 12"></path><path d="M14 15c-.256 0-.512-.098-.707-.293l-12-12c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l12 12c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293zM14 2l-12 12"></path><path d="M2 15c-.256 0-.512-.098-.707-.293-.391-.391-.391-1.023 0-1.414l12-12c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-12 12c-.195.195-.451.293-.707.293z"></path></g></svg>
-                        : <svg height='20px' width='20px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" x="0px" y="0px"><g><path d="M0 2h16v2h-16zM0 7h16v2h-16zM0 12h16v2h-16z"></path></g></svg>
+                        : <svg height='20px' width='20px'  fill={props.bgColor === 'blue' ? '#FFFFFF' :'#000000'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" x="0px" y="0px"><g><path d="M0 2h16v2h-16zM0 7h16v2h-16zM0 12h16v2h-16z"></path></g></svg>
                     }
 
                 </button>
@@ -40,6 +40,11 @@ const Nav = (props) => {
                         <li className={`${props.currentOpen === 'sff' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
                             <Link href={'/sff'} as={process.env.BACKEND_URL + '/sff'}>
                                 <a>Sustainable Fashion Foundation</a>
+                            </Link>
+                        </li>
+                        <li className={`${props.currentOpen === 'fazit' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
+                            <Link href={'/fazit'} as={process.env.BACKEND_URL + '/fazit'}>
+                                <a>Zusammenfassung</a>
                             </Link>
                         </li>
                         <li className={`${props.currentOpen === 'rating' ? `text-red` : `text-white`} pb-4 hover:text-red`}>

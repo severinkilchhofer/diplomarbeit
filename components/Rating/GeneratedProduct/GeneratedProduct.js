@@ -52,12 +52,12 @@ const GeneratedProduct = () => {
 
 
     return (
-        <div className="row pb-64">
+        <div className="row">
             {finalProductState ?
                 <ShopItem brand={finalProductState[0].name}
                           name={finalProductState[0].productName}
                           description={finalProductState[0].beschreibung}
-                          price={65}
+                          price={finalProductState[0].price}
                           rating={Math.round(overallRating)}
                           kleidungsstueck={renderSwitch({selected: finalProductState[1].selected})}/>
                 : ''}

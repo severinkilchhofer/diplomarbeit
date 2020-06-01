@@ -8,24 +8,26 @@ import React from "react";
 export default function IndexPage() {
     return (
         <>
-            <Nav currentOpen={'intro'} bgColor={'white'}/>
-            <div className="container">
-                <div className="row pb-32">
-                    <div className="col">
-                        <h1 className="text-blue text-center font-black">Sustainable Fashion Rating</h1>
-                        <p className="text-center">Diplomarbeit von Severin Kilchhofer</p>
+            <Nav currentOpen={'intro'} bgColor={'blue'}/>
+            <div className="w-screen h-screen bg-blue">
+                <div className="container">
+                    <div className="row pb-32">
+                        <div className="col text-white">
+                            <h1 className="text-center font-black">Sustainable Fashion Rating</h1>
+                            <p className="text-center">Diplomarbeit von Severin Kilchhofer</p>
+                        </div>
                     </div>
-                </div>
 
-                <div className="row pb-64">
-                    <ShopItem brand={'The South Mountain'}
-                              name={'T-Shirt Mountain One'}
-                              description={'Das Männer T-Shirt in Kontrastfarbe und Rundhals ist aus regenerierten Fischernetzen und Nylon-Resten, sogenanntes ECONYL®-Garn hergestellt. Die T-Shirts von The South Mountain werden in der Schweiz unter fairen Arbeitsbedingungen und einem minimalen Transportweg produziert.'}
-                              price={65}
-                              rating={8}
-                              kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}/>
-                </div>
+                    <div className="row pb-64">
+                        <ShopItem brand={'The South Mountain'}
+                                  name={'T-Shirt Mountain One'}
+                                  description={'Das Männer T-Shirt in Kontrastfarbe und Rundhals ist aus regenerierten Fischernetzen und Nylon-Resten, sogenanntes ECONYL®-Garn hergestellt. Die T-Shirts von The South Mountain werden in der Schweiz unter fairen Arbeitsbedingungen und einem minimalen Transportweg produziert.'}
+                                  price={65}
+                                  rating={8}
+                                  kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}/>
+                    </div>
 
+                </div>
             </div>
             <Slider>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">

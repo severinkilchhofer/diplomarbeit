@@ -191,6 +191,6 @@ export default () => (
         </div>
 
         <FooterNav navTextBack='Recherche und Erkenntnisse' navLinkBack='recherche'
-                   navTextForward='Eigenes Rating erstellen' navLinkForward='rating'/>
+                   navTextForward='Zusammenfassung' navLinkForward='fazit'/>
     </>
 )

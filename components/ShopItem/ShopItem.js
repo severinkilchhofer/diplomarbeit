@@ -2,8 +2,8 @@ import React from "react";
 
 const ShopItem = (props) => {
     return (
-        <section className="m-2 leading-normal">
-            <div className="shadow-xl rounded overflow-hidden m-4 sm:flex">
+        <section className="m-2 leading-normal w-full">
+            <div className="bg-white shadow-2xl rounded overflow-hidden m-4 sm:flex">
                 <div
                     className="flex justify-center bg-gray m-5 p-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
                     {props.kleidungsstueck}
