@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
-import Link from "next/link";
+import {useRouter} from 'next/router'
 
 const CreateRuT = (props) => {
 
-    const [rutState, setRunState] = useState(() => {
+    const [rutState, setRutState] = useState(() => {
             if (typeof window !== 'undefined') {
                 const value = localStorage.getItem('rutData');
                 return value !== null ? JSON.parse(value) : '';
@@ -18,9 +18,15 @@ const CreateRuT = (props) => {
         }, [rutState]
     )
 
+    const router = useRouter()
+
     const {register, handleSubmit, watch, errors} = useForm();
     const onSubmit = data => {
-        setRunState(data)
+        setRutState(data);
+        router.push({
+            pathname: '/finalproduct',
+            as: process.env.BACKEND_URL + '/finalproduct'
+        })
     }
 
     return (
@@ -171,12 +177,9 @@ const CreateRuT = (props) => {
                             type="submit"
                             onClick={props.previousStep}>Zurück
                     </button>
-                    <Link href={'/finalproduct'} as={process.env.BACKEND_URL + '/finalproduct'}>
-                        <button className="p-4 m-4 bg-blue text-white font-bold rounded border-2 border-blue"
-                                type="submit"
-                                onClick={props.nextStep}>Finales Rating berechnen
-                        </button>
-                    </Link>
+                    <button className="p-4 m-4 bg-blue text-white font-bold rounded border-2 border-blue"
+                            type="submit">Finales Rating berechnen
+                    </button>
                 </div>
             </form>
         </>

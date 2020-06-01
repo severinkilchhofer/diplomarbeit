@@ -26,7 +26,7 @@ const CreateOuN = (props) => {
         <>
             <div className="row">
                 <div className="lg:col-8">
-                    <h3>Nachhaltigkeit und Ökologie</h3>
+                    <h3>Ökologie und Nachhaltigkeit</h3>
                 </div>
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
