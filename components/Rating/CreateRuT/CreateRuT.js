@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
+import Link from "next/link";
 
 const CreateRuT = (props) => {
 
@@ -88,7 +89,7 @@ const CreateRuT = (props) => {
 
                     <div className="w-full pt-4 lg:col-6">
                         <label className="block text-black text-sm font-bold mb-2">
-                           Sind die verwendeten Materialien deklariert und öffentlich einsehbar?
+                            Sind die verwendeten Materialien deklariert und öffentlich einsehbar?
                         </label>
                         <div className="mt-2">
                             <label className="inline-flex items-baseline w-full">
@@ -120,7 +121,7 @@ const CreateRuT = (props) => {
 
                     <div className="w-full pt-4 lg:col-6">
                         <label className="block text-black text-sm font-bold mb-2">
-                           Haben die Produkte ein Label, welches von unabhängigen Stellen geprüft werden kann?
+                            Haben die Produkte ein Label, welches von unabhängigen Stellen geprüft werden kann?
                         </label>
                         <div className="mt-2">
                             <label className="inline-flex items-baseline w-full">
@@ -161,7 +162,7 @@ const CreateRuT = (props) => {
                             </label>
                         </div>
                     </div>
-                    
+
                 </div>
 
 
@@ -170,10 +171,12 @@ const CreateRuT = (props) => {
                             type="submit"
                             onClick={props.previousStep}>Zurück
                     </button>
-                    <button className="p-4 m-4 bg-blue text-white font-bold rounded border-2 border-blue"
-                            type="submit"
-                            onClick={props.nextStep}>Weiter
-                    </button>
+                    <Link href={'/finalproduct'} as={process.env.BACKEND_URL + '/finalproduct'}>
+                        <button className="p-4 m-4 bg-blue text-white font-bold rounded border-2 border-blue"
+                                type="submit"
+                                onClick={props.nextStep}>Finales Rating berechnen
+                        </button>
+                    </Link>
                 </div>
             </form>
         </>

@@ -1,8 +1,10 @@
 import React, {useState} from "react"
+import ShopItem from "../../ShopItem/ShopItem";
+import Shirt from "../../Shirt/Shirt";
+import Pullover from "../../Pullover/Pullover";
+import Socks from "../../Socks/Socks";
 
 const GeneratedProduct = () => {
-
-
     const [finalProductState, setFinalProductState] = useState(() => {
             if (typeof window !== 'undefined') {
 
@@ -34,9 +36,32 @@ const GeneratedProduct = () => {
 
     const overallRating = (subRatingMua + subRatingRut + subRatingOun) / 3;
 
+    const renderSwitch = ({selected}) => {
+        switch (selected) {
+            case 1:
+                return <Pullover fill={finalProductState ? finalProductState[1].color : ''}
+                                 pattern={finalProductState ? finalProductState[1].pattern : ''}/>;
+            case 2:
+                return <Socks fill={finalProductState ? finalProductState[1].color : ''}
+                              pattern={finalProductState ? finalProductState[1].pattern : ''}/>;
+            default:
+                return <Shirt fill={finalProductState ? finalProductState[1].color : ''}
+                              pattern={finalProductState ? finalProductState[1].pattern : ''}/>;
+        }
+    }
+
 
     return (
-        <div>{Math.round(overallRating)}</div>
+        <div className="row pb-64">
+            {finalProductState ?
+                <ShopItem brand={finalProductState[0].name}
+                          name={finalProductState[0].productName}
+                          description={finalProductState[0].beschreibung}
+                          price={65}
+                          rating={Math.round(overallRating)}
+                          kleidungsstueck={renderSwitch({selected: finalProductState[1].selected})}/>
+                : ''}
+        </div>
     );
 }
 

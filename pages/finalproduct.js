@@ -5,8 +5,6 @@ import GeneratedProduct from "../components/Rating/GeneratedProduct/GeneratedPro
 export default () => (
     <>
         <Nav currentOpen={'rating'} bgColor={'blue'}/>
-
-        <p>asdasd</p>
-            <GeneratedProduct/>
+        <GeneratedProduct/>
     </>
 )

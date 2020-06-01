@@ -2,6 +2,8 @@ import ShopItem from '../components/ShopItem/ShopItem'
 import Nav from '../components/Nav/Nav'
 import Slider from "../components/Slider/Slider";
 import FooterNav from "../components/FooterNav/FooterNav";
+import Shirt from "../components/Shirt/Shirt";
+import React from "react";
 
 export default function IndexPage() {
     return (
@@ -20,7 +22,8 @@ export default function IndexPage() {
                               name={'T-Shirt Mountain One'}
                               description={'Das Männer T-Shirt in Kontrastfarbe und Rundhals ist aus regenerierten Fischernetzen und Nylon-Resten, sogenanntes ECONYL®-Garn hergestellt. Die T-Shirts von The South Mountain werden in der Schweiz unter fairen Arbeitsbedingungen und einem minimalen Transportweg produziert.'}
                               price={65}
-                              rating={8}/>
+                              rating={8}
+                              kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}/>
                 </div>
 
             </div>

@@ -1,12 +1,12 @@
 import React from "react";
-import Shirt from "../Shirt/Shirt";
 
 const ShopItem = (props) => {
     return (
         <section className="m-2 leading-normal">
             <div className="shadow-xl rounded overflow-hidden m-4 sm:flex">
-                <div className="flex justify-center bg-gray m-5 p-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
-                    <Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>
+                <div
+                    className="flex justify-center bg-gray m-5 p-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
+                    {props.kleidungsstueck}
                 </div>
 
                 <div className="px-6 py-4">
@@ -16,7 +16,8 @@ const ShopItem = (props) => {
                     <p className="mb-2 font-bold">CHF {props.price}.-</p>
 
                     <div>
-                        <button className="w-16 h-16 bg-rgreen rounded-tl-full rounded-bl-full rounded-br-full">
+                        <button
+                            className={`bg-r${props.rating} w-16 h-16 rounded-tl-full rounded-bl-full rounded-br-full`}>
                             <p className="font-bold text-lg">{props.rating}</p>
                         </button>
                     </div>
