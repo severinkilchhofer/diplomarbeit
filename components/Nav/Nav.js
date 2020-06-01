@@ -14,7 +14,7 @@ const Nav = (props) => {
 
 
     return (
-        <nav className={`bg-${props.bgColor} h-24`}>
+        <nav className={`bg-${props.bgColor} h-20 sm:h-24`}>
             <div className="block z-50 relative float-right pt-4 pr-4">
                 <button onClick={() => enableNav(!open)} className="px-3 py-2">
                     {open

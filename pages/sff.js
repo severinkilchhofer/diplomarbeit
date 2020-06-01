@@ -14,7 +14,7 @@ export default () => (
     <>
         <Nav currentOpen={'sff'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
-            <div className="container pt-32">
+            <div className="container pt-0 sm:pt-32">
                 <div className="row">
                     <div className="lg:offset-2 lg:col-7">
                         <h1 className="text-white font-black">Meine Lösung für mehr Online Transparenz im

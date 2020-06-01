@@ -15,12 +15,6 @@ export default () => (
                             einen vereinfachten Workflow erstellt, den es erlaubt sein eigenes Rating zu berechnen.</p>
                     </div>
                 </div>
-                <div className="row pt-24">
-                    <div className="lg:col-6 text-center sm:text-left">
-                        <button className="p-6 bg-white text-blue font-bold rounded">Eigenes Produkt erfassen</button>
-                    </div>
-                </div>
-
             </div>
         </div>
         <FooterNav navTextBack='Sustainable Fashion Foundation' navLinkBack='sff'

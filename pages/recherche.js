@@ -7,7 +7,7 @@ export default () => (
     <div style={{overflow: 'hidden'}}>
         <Nav currentOpen={'recherche'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
-            <div className="container pt-32">
+            <div className="container pt-0 sm:pt-32">
                 <div className="row">
                     <div className="lg:offset-2 lg:col-9">
                         <h1 className="text-white font-black">Recherche und Erkenntnisse</h1>

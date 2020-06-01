@@ -11,7 +11,7 @@ export default function IndexPage() {
             <Nav currentOpen={'intro'} bgColor={'blue'}/>
             <div className="w-screen h-screen bg-blue">
                 <div className="container">
-                    <div className="row pb-32">
+                    <div className="row pb-4 sm:pb-32">
                         <div className="col text-white">
                             <h1 className="text-center font-black">Sustainable Fashion Rating</h1>
                             <p className="text-center">Diplomarbeit von Severin Kilchhofer</p>
