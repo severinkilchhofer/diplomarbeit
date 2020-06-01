@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = (function(a){return {"/finalproduct":[a],"/rating":[a]}}("static\u002Fchunks\u002Fb61ad2bb78ef7c10cb68fb8ac3cb8a688c6b7fb2.094e30f053b5f5156c76.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
