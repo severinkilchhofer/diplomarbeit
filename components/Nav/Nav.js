@@ -16,7 +16,7 @@ const Nav = (props) => {
     return (
         <nav className={`bg-${props.bgColor} h-20 sm:h-24`}>
             <div className="block z-50 relative float-right pt-4 pr-4">
-                <button onClick={() => enableNav(!open)} className="px-3 py-2">
+                <button onClick={() => enableNav(!open)} className="px-3 py-2 focus:outline-none">
                     {open
                         ? <svg height='20px' width='20px'  fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" x="0px" y="0px"><g><path d="M2 2l12 12"></path><path d="M14 15c-.256 0-.512-.098-.707-.293l-12-12c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0l12 12c.391.391.391 1.023 0 1.414-.195.195-.451.293-.707.293zM14 2l-12 12"></path><path d="M2 15c-.256 0-.512-.098-.707-.293-.391-.391-.391-1.023 0-1.414l12-12c.391-.391 1.023-.391 1.414 0s.391 1.023 0 1.414l-12 12c-.195.195-.451.293-.707.293z"></path></g></svg>
                         : <svg height='20px' width='20px'  fill={props.bgColor === 'blue' ? '#FFFFFF' :'#000000'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" x="0px" y="0px"><g><path d="M0 2h16v2h-16zM0 7h16v2h-16zM0 12h16v2h-16z"></path></g></svg>

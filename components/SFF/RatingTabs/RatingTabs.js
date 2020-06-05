@@ -11,12 +11,12 @@ const RatingTabs = (props) => {
             <a className="text-center block py-2 px-4 font-bold sm:text-lg">
                 <div>
                     <button
-                        className={`rating${item.ratingBegin} w-6 h-6 sm:w-12 sm:h-12 rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
-                        <p className="font-bold text-sm sm:text-base">{item.ratingBegin}</p>
+                        className={`rating${item.ratingBegin} w-6 h-6 mx-0 sm:mx-2 sm:w-12 sm:h-12 rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
+                        <p className="font-bold text-xs sm:text-base">{item.ratingBegin}</p>
                     </button>&nbsp;-&nbsp;
                     <button
-                        className={`rating${item.ratingEnd} w-6 h-6 sm:w-12 sm:h-12 rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
-                        <p className="font-bold text-sm sm:text-base">{item.ratingEnd}</p>
+                        className={`rating${item.ratingEnd} w-6 h-6 mx-0 sm:mx-2 sm:w-12 sm:h-12 rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
+                        <p className="font-bold text-xs sm:text-base">{item.ratingEnd}</p>
                     </button>
                 </div>
             </a>

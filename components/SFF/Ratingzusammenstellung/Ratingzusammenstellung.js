@@ -11,12 +11,11 @@ const Ratingzusammenstellung = () => {
 
                 <div className="pt-4 sm:pl-6">
                     <h5 className="text-blue">Ratingzusammenstellung</h5>
-                    <p className="mb-2"><strong>9.2</strong> -> Produkt (10%)</p>
-                    <p className="mb-2"><strong>8.6</strong> -> Menschen und Arbeitsrechte (30%)</p>
-                    <p className="mb-2"><strong>7.6</strong> -> Ökologie und Nachhaltigkeit (30%)</p>
-                    <p className="mb-2"><strong>7.2</strong> -> Rückverfolgbarkeit und Transparenz (30%)</p>
+                    <p className="mb-2"><strong>8.3</strong> -> Menschen und Arbeitsrechte (33.33%)</p>
+                    <p className="mb-2"><strong>8.2</strong> -> Ökologie und Nachhaltigkeit (33.33%)</p>
+                    <p className="mb-2"><strong>8.4</strong> -> Rückverfolgbarkeit und Transparenz (33.33%)</p>
                     <hr/>
-                    <p className="mt-2"><strong>7.9 -> Finales Rating</strong></p>
+                    <p className="mt-2"><strong>8.3</strong> -> Gesamtrating</p>
                 </div>
             </div>
         </section>

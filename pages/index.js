@@ -29,24 +29,32 @@ export default function IndexPage() {
 
                 </div>
             </div>
+
             <Slider>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74 auf
-                        130 Milliarden Kleidungsstücken mehr als verdoppelt.</h1>
-                    <p>(Euromonitor, 2020)</p>
+                    <div className="container">
+                        <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74 auf
+                            130 Milliarden Kleidungsstücken mehr als verdoppelt.</h1>
+                        <p>(Euromonitor, 2020)</p>
+                    </div>
                 </div>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000 Mikrofasern
-                        aus unserer Kleidung ins Abwasser gelangen.</h1>
-                    <p>(Napper und Thompson, 2016)</p>
+                    <div className="container">
+                        <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000 Mikrofasern
+                            aus unserer Kleidung ins Abwasser gelangen.</h1>
+                        <p>(Napper und Thompson, 2016)</p>
+                    </div>
                 </div>
                 <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <h1 className="text-blue">Nicht jeder hat die Zeit, um zu entziffern, unter welchen
-                        Herstellungsbedingungen ein
-                        Kleidungsstück produziert wurde.</h1>
-                    <p>(Fashion Transparency Index Report, 2020)</p>
+                    <div className="container">
+                        <h1 className="text-blue">Nicht jeder hat die Zeit, um zu entziffern, unter welchen
+                            Herstellungsbedingungen ein
+                            Kleidungsstück produziert wurde.</h1>
+                        <p>(Fashion Transparency Index Report, 2020)</p>
+                    </div>
                 </div>
             </Slider>
+
             <div className="container pt-20">
                 <div className="row">
                     <div className="lg:offset-1 lg:col-8">

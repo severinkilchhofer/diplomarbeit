@@ -55,7 +55,7 @@ export default () => (
             </div>
 
             <div className="row pt-32">
-                <div className="lg:offset-2 lg:col-8">
+                <div className="lg:col-12">
                     <Ratingzusammenstellung/>
                 </div>
             </div>
