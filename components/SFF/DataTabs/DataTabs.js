@@ -16,8 +16,8 @@ const DataTabs = (props) => {
         <div id={item.id} style={visibleTab === item.id ? {} : {display: 'none'}}>
             {item.tabContent.rows.map(el =>
                 <tr id={el.id} className="row">
-                    <td className="lg:col-5">{el.info}</td>
-                    <td className="lg:offset-1 lg:col-5">{el.bspData}</td>
+                    <td className="lg:col-6">{el.info}</td>
+                    <td className="lg:col-6">{el.bspData}</td>
                 </tr>
             )}
         </div>
@@ -26,15 +26,15 @@ const DataTabs = (props) => {
     return (
         <div>
             <div className="tabs">
-                <ul className="flex">
+                <ul className="flex" style={{overflowX: 'auto'}}>
                     {listTitles}
                 </ul>
-                <div className="tab-content">
+                <div className="tab-content lg:col-12">
                     <table className="container">
                         <thead>
                         <tr id={0} className="row pt-4">
-                            <th className="lg:col-5">Informationen über das Produkt</th>
-                            <th className="lg:offset-1 lg:col-5">Beispieldaten</th>
+                            <th className="lg:col-6">Informationen über das Produkt</th>
+                            <th className="lg:col-6">Beispieldaten</th>
                         </tr>
                         </thead>
                         <tbody>

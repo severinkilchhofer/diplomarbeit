@@ -6,9 +6,10 @@ import Ratingzusammenstellung from "../components/SFF/Ratingzusammenstellung/Rat
 import DataTabs from "../components/SFF/DataTabs/DataTabs";
 import {ProductData} from "../components/SFF/SFRList/ProductData";
 import Ratingkategorie from "../components/SFF/Ratingkategorie/Ratingkategorie";
-import MehrwertTabs from "../components/SFF/MehrwertTabs/MehrwertTabs";
-import {MehrwertData} from "../components/SFF/MehrwertTabs/MehrwertData";
 import FooterNav from "../components/FooterNav/FooterNav";
+import {RatingTabsData} from "../components/SFF/RatingTabs/RatingTabsData";
+import RatingTabs from "../components/SFF/RatingTabs/RatingTabs";
+import React from "react";
 
 export default () => (
     <>
@@ -68,21 +69,18 @@ export default () => (
                     <h2>Die vier Ratingkategorien</h2>
                     <p className="pb-4">Das Sustainable Fashion Rating bezieht sich auf eine Ratingmethodik, um ein
                         Gesamtrating für ein
-                        einzelnes Kleidungsstück zu kalkulieren. Ein Produkt erhält für in den vier unten aufgelisteten
+                        einzelnes Kleidungsstück zu kalkulieren. Ein Produkt erhält für in den drei unten aufgelisteten
                         Kategorien Punkte für die preisgegebenen Informationen. Diese Punkte werden von der Sustainable
                         Fashion Foundation vergeben.</p>
-                    <p className="pb-4">Um eine verhätnismässige Berechnung durchzuführen, werden die Kategorien
-                        unterschiedlich
-                        gewichtet. Alle markenrelevanten Kategorien sind mit 30% gewichtet. Diese Kategorien decken
-                        bereits die Art und Weise ab, wie Bekleidung hergestellt wird. Die Informationen über das
-                        Produkt selbst
-                        werden mit 10% gewichtet. Diese habe ich in das Rating reingenommen, um das Rating einem
-                        konkreten Produkt zuzuweisen. Zudem kann ich damit die konkreten Materialien ausweisen. So kann
-                        es nicht
-                        passieren, dass eine Marke, welche bei einem Pullover Bio Baumwolle verwendet dasselbe Rating
-                        erhält, wie eine Winterjacke der gleichen Marke, mit Pelz aus schlechter Tierhaltung.</p>
-                    <p>In der folgenden Übersicht werden die Kategorieeigenschaften für die Punktevergabe eines
-                        Kleidungsstückes beschrieben.</p>
+                    <p className="pb-4">Alle Herstellerrelevanten Kategorien sind mit 33.33% gewichtet. Diese Kategorien
+                        decken
+                        die Art und Weise ab, wie Bekleidung hergestellt wird. Die Informationen über das
+                        Produkt selbst werden nicht in das Rating mit einbezogen. Die Produktinformationen habe ich als
+                        Kategorie aufgenommen, um das Gesamtrating einem
+                        konkreten Produkt zuzuweisen. Dies wird für die eindeutige Zuweisung eines Produktes
+                        benötigt.</p>
+                    <p>In der folgenden Übersicht werden die jeweiligen Kategorieeigenschaften für die Vergabe der
+                        Punkte durch die Sustainable Fashion Foundation beschrieben.</p>
                 </div>
             </div>
             <div className="row pt-32">
@@ -92,7 +90,7 @@ export default () => (
                                      '                Zertifikate und die Genauigkeit der Materialdefinitionen und dessen Herstellung untersucht.'}
                                      imageName={'product.svg'}
                                      imageAlt={'Illustration eines Kleidungsstückes auf einem Smartphone'}
-                                     gewichtung={10}
+                                     gewichtung={''}
                     />
                 </div>
                 <div className="lg:col-6 pt-4 sm:pt-0">
@@ -100,7 +98,7 @@ export default () => (
                                      description={'In dieser Kategorie wird der Soziale Aspekt der Marke untersucht. Dies geschieht für die eigenen Mitarbeiter als auch für die Arbeitnehmer in der Lieferkette. Punkte werden ausserdem für Arbeits- und Lohnbedinungen vergeben, sowie für die Massnahmen zum Schutz vor Arbeitsrisiken der Arbeitnehmer.'}
                                      imageName={'menschen_arbeitsrechte.svg'}
                                      imageAlt={'Illustration von zwei Menschen in einem Park'}
-                                     gewichtung={30}
+                                     gewichtung={'Gewichtung: 33.33%'}
                     />
                 </div>
 
@@ -111,7 +109,7 @@ export default () => (
                                      description={'Um eine langfristige Nachhaltigkeit zu garantieren, wird die Produktionskette der Marke untersucht. Punkte werden unteranderem aufgrund der Verwendung nachhaltiger Materialien, einer emissionsarmen Produktion und dem Gebrauch von nachhaltigen Ressourcen vergeben.'}
                                      imageName={'oekologie_nachhaltigkeit.svg'}
                                      imageAlt={'Illustration eines Herzes mit Pflanzen'}
-                                     gewichtung={30}
+                                     gewichtung={'Gewichtung: 33.33%'}
                     />
                 </div>
                 <div className="lg:col-6 pt-4 sm:pt-0">
@@ -119,7 +117,7 @@ export default () => (
                                      description={'Die Transparenz einer Marke wird mit den Daten der Lieferanten geprüft. Auf der einen Seite werden die Informationen der Herstellungsbetriebe, auf der anderen werden die der Verarbeitungsfirmen angeschaut. Zusätzlich werden Details, wie die Adresse des Lieferanten, die Anzahl der Beschäftigten sowie Aufschlüsselung nach Geschlecht geprüft.'}
                                      imageName={'rueckverfolgbarkeit_transparenz.svg'}
                                      imageAlt={'Illustration einer Fabrik mit Lastwagen'}
-                                     gewichtung={30}
+                                     gewichtung={'Gewichtung: 33.33%'}
                     />
                 </div>
             </div>
@@ -127,36 +125,43 @@ export default () => (
             <div className="row">
                 <div className="pt-32 lg:offset-2 lg:col-8">
                     <h2>Berechnung</h2>
-                    <p className="pb-4">Alle Kategorien enthalten ein Subrating, welches sich aus der Summe der
-                        jeweiligen Kategoriewerte ergibt. Die vier Subratings werden anschliessend mit der Gewichtung
+                    <p className="pb-4">Die Markenrelevanten Kategorien enthalten ein Subrating, welches sich aus dem
+                        Mittelwert der
+                        jeweiligen Kategoriewerte ergibt. Die drei Subratings werden anschliessend mit der Gewichtung
                         multipliziert und zum Schluss addiert. Das darausfolgende Resultat führt zum Gesamtrating des
                         jeweilgen Produktes.</p>
+                    <p className="pb-4">Nach der Berechnung wird das Gesamtrating gerundet und als Ganzzahl in einem
+                        Ratingbatch
+                        gekennzeichnet. Dieser dient zur raschen Orientierung für den Endkunden im Onlineshop und zeigt
+                        auf, wie gut eine Textilmarke abgeschnitten hat.</p>
+
                 </div>
             </div>
 
             <div className="row">
                 <div className="lg:col-12 bg-lightblue text-center pt-10 pb-6">
-                    <h5>S1 * 10% + S2 * 30% + S3 * 30% + S4 * 30% = Gesamtrating</h5>
+                    <h5>1/3 * Subrating Menschen und Arbeitsrechte + 1/3 * Subrating Ökologie und Nachhaltigkeit + 1/3 *
+                        Subrating Rückverfolgbarkeit und Transparenz = Gesamtrating</h5>
                 </div>
                 <div className="lg:col-12 pb-4">
                     <p className="text-sm">S1 = Subrating Produkt | S2 = Subrating Menschen und Arbeitsrechte | S3 =
                         Subrating Ökologie und
                         Nachhaltigkeit | S4 = Subrating Rückverfolgbarkeit und Transparenz</p>
                 </div>
+            </div>
+
+
+            <div className="row pt-32">
                 <div className="lg:offset-2 lg:col-8">
-                    <p className="pb-4">Nach der Berechnung wird das Gesamtrating gerundet und als Ganzzahl in einem
-                        Ratingbatch
-                        gekennzeichnet. Dieser dient zur raschen Orientierung für den Endkunden im Onlineshop und zeigt
-                        auf, wie gut ein Textilstück abgeschnitten hat.</p>
-                    <p>Ratingbatches gemäss dem Sustainable Fashion Rating</p>
+                    <h2>Ratingzahlen</h2>
+                    <img src="batches.svg" alt="Batches aller Kategorieratings"/>
+                    <p className="pt-4">Ratingbatches gemäss dem Sustainable Fashion Rating</p>
+                </div>
+                <div className="lg:col-12 pt-24">
+                    <RatingTabs data={RatingTabsData}/>
                 </div>
             </div>
 
-            <div className="row pt-6">
-                <div className="lg:offset-2 lg:col-8">
-                    <img src="batches.svg" alt="Batches aller Kategorieratings"/>
-                </div>
-            </div>
 
             <div className="row">
                 <div className="pt-32 pb-4 lg:offset-2 lg:col-8">
@@ -180,14 +185,7 @@ export default () => (
                 </div>
             </div>
 
-            <div className="row">
-                <div className="pt-32 pb-4 lg:offset-2 lg:col-8">
-                    <h2>Welchen Mehrwert bietet die Sustainable Fashion Foundation?</h2>
-                </div>
-                <div className="lg:col-12">
-                    <MehrwertTabs data={MehrwertData}/>
-                </div>
-            </div>
+
         </div>
 
         <FooterNav navTextBack='Recherche und Erkenntnisse' navLinkBack='recherche'

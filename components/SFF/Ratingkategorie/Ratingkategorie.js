@@ -9,7 +9,7 @@ const Ratingkategorie = (props) => {
             <h5>{props.title}</h5>
             <p>{props.description}</p>
             <div className="absolute bottom-0 pb-4">
-                <p className="font-bold pt-4">Gewichtung: {props.gewichtung}%</p>
+                <p className="font-bold pt-4">{props.gewichtung}</p>
             </div>
         </div>
     )

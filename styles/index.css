@@ -97,14 +97,12 @@ td {
     text-align: left;
     border-bottom: 1px solid #E1E1E1; }
 th:first-child,
-td:first-child {
-    padding-left: 0; }
+td:first-child { @apply text-blue }
 th:last-child,
-td:last-child {
-    padding-right: 0; }
+td:last-child { @apply text-black }
 
 tbody tr:first-child {
-    @apply text-red font-bold;
+    @apply text-blue bg-lightblue border-t border-b border-blue;
 }
 
 .rating0 {
