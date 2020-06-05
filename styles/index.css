@@ -33,25 +33,34 @@ p {
     h1 {
         @apply text-xxl;
     }
+
     h2 {
         @apply text-xl;
     }
+
     h5 {
         @apply text-lg;
     }
+
     p {
         @apply text-base;
     }
 }
 
 /* Medium (md) */
-@media (min-width: 768px) { /* ... */ }
+@media (min-width: 768px) {
+    /* ... */
+}
 
 /* Large (lg) */
-@media (min-width: 1024px) { /* ... */ }
+@media (min-width: 1024px) {
+    /* ... */
+}
 
 /* Extra Large (xl) */
-@media (min-width: 1280px) { /* ... */ }
+@media (min-width: 1280px) {
+    /* ... */
+}
 
 
 /*.btn-blue {*/
@@ -67,22 +76,26 @@ p {
     /*height: 0;*/
     /*background: linear-gradient(160deg, #f47c66 0%, #e51906 100%);*/
 }
+
 .sticky {
     height: 100vh;
     background: transparent;
     width: 100%;
 }
+
 .sticky .animation {
     width: 100%;
     height: 100%;
     position: absolute;
 }
+
 .sticky .animation svg {
     opacity: 1;
     position: absolute;
     width: 300px;
     height: 300px;
 }
+
 .sticky .heading {
     position: absolute;
     height: 100%;
@@ -95,11 +108,18 @@ th,
 td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #E1E1E1; }
+    border-bottom: 1px solid #E1E1E1;
+}
+
 th:first-child,
-td:first-child { @apply text-blue }
+td:first-child {
+    @apply text-blue
+}
+
 th:last-child,
-td:last-child { @apply text-black }
+td:last-child {
+    @apply text-black
+}
 
 tbody tr:first-child {
     @apply text-blue bg-lightblue border-t border-b border-blue;
@@ -108,33 +128,62 @@ tbody tr:first-child {
 .rating0 {
     @apply bg-rating0
 }
+
 .rating1 {
     @apply bg-rating1
 }
+
 .rating2 {
     @apply bg-rating2
 }
+
 .rating3 {
     @apply bg-rating3
 }
-.rating4{
+
+.rating4 {
     @apply bg-rating4
 }
+
 .rating5 {
     @apply bg-rating5
 }
+
 .rating6 {
     @apply bg-rating6
 }
+
 .rating7 {
     @apply bg-rating7
 }
+
 .rating8 {
     @apply bg-rating8
 }
-.rating9{
+
+.rating9 {
     @apply bg-rating9
 }
+
 .rating10 {
     @apply bg-rating10
+}
+
+.card-input-element {
+    display: none;
+}
+
+.card-input-element:checked + .radio-card {
+    background-color: white;
+    color: #114B5F;
+}
+
+.radio-card {
+    @apply py-4 px-8 border-4 border-white font-bold rounded
+}
+
+.radio-card:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #114B5F;
 }

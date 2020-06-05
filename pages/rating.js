@@ -10,7 +10,7 @@ function Rating() {
     return (<>
             {!clicked ?
                 <div>
-                <Nav currentOpen={'rating'} bgColor={'blue'}/>
+                    <Nav currentOpen={'rating'} bgColor={'blue'}/>
                     <div className="w-screen h-screen bg-blue">
                         <div className="container sm:pt-32">
                             <div className="row flex">
@@ -43,10 +43,8 @@ function Rating() {
                 :
 
                 <div>
-                <Nav currentOpen={'rating'} bgColor={'white'}/>
-                    <div className="container">
-                        <MultiStepForm/>
-                    </div>
+                    <Nav currentOpen={'rating'} bgColor={'blue'}/>
+                    <MultiStepForm/>
                 </div>
             }
         </>

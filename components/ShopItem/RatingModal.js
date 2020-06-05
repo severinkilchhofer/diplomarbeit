@@ -13,9 +13,9 @@ const RatingModal = (props) => {
                 </div>
                 <div className="pt-4 md:pr-8 min-w-full">
                     <p className="mb-2 font-bold">Ratingzusammenstellung</p>
-                    <p className="mb-2"><strong>8.3</strong> -> Menschen und Arbeitsrechte&nbsp;(30%)</p>
-                    <p className="mb-2"><strong>8.2</strong> -> Ökologie und Nachhaltigkeit&nbsp;(30%)</p>
-                    <p className="mb-2"><strong>8.4</strong> -> Rückverfolgbarkeit und Transparenz&nbsp;(30%)</p>
+                    <p className="mb-2"><strong>8.3</strong> -> Menschen und Arbeitsrechte&nbsp;(33.33%)</p>
+                    <p className="mb-2"><strong>8.2</strong> -> Ökologie und Nachhaltigkeit&nbsp;(33.33%)</p>
+                    <p className="mb-2"><strong>8.4</strong> -> Rückverfolgbarkeit und Transparenz&nbsp;(33.33%)</p>
                     <hr/>
                     <p className="mt-2"><strong>8.3</strong> -> Gesamtrating</p>
                 </div>
