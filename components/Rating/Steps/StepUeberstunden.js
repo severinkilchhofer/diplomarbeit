@@ -1,20 +1,20 @@
 import React from "react"
 
-const StepKinderarbeit = (props) => {
+const StepUeberstunden = (props) => {
 
 
     return (
         <>
             <div className="row pt-4 text-white">
                 <div className="w-full pt-4 lg:col-12 text-white">
-                    <h1>Gibt es in deiner Produktionsstätte Kinderarbeit?</h1>
+                    <h1>Werden geleistete Überstunden bezahlt?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.kinderarbeit === '0'}
+                                   defaultChecked={props.data.ueberstunden === '10'}
                                    className="card-input-element"
-                                   name="kinderarbeit"
-                                   value="0"
+                                   name="ueberstunden"
+                                   value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>Ja</p>
@@ -22,10 +22,10 @@ const StepKinderarbeit = (props) => {
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.kinderarbeit === '10'}
+                                   defaultChecked={props.data.ueberstunden === '1'}
                                    className="card-input-element"
-                                   name="kinderarbeit"
-                                   value="5"
+                                   name="ueberstunden"
+                                   value="1"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>Nein</p>
@@ -33,13 +33,13 @@ const StepKinderarbeit = (props) => {
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.kinderarbeit === '1'}
+                                   defaultChecked={props.data.ueberstunden === '0'}
                                    className="card-input-element"
-                                   name="kinderarbeit"
-                                   value="1"
+                                   name="ueberstunden"
+                                   value="0"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Nicht bekannt</p>
+                                <p>Es gibt keine Überstunden</p>
                             </div>
                         </label>
                     </div>
@@ -49,4 +49,4 @@ const StepKinderarbeit = (props) => {
     )
 }
 
-export default StepKinderarbeit;
+export default StepUeberstunden;

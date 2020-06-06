@@ -2,6 +2,8 @@ import Nav from "../components/Nav/Nav";
 import React, {useEffect, useState} from 'react'
 import MultiStepForm from "../components/Rating/MultiStepForm/MultiStepForm";
 import FooterNav from "../components/FooterNav/FooterNav";
+import CreateRating from "../components/Rating/CreateRating/CreateRating";
+import Flow from "../components/Rating/Flow/Flow";
 
 
 function Rating() {
@@ -42,9 +44,8 @@ function Rating() {
 
                 :
 
-                <div>
-                    <Nav currentOpen={'rating'} bgColor={'blue'}/>
-                    <MultiStepForm/>
+                <div className="bg-blue">
+                    <Flow/>
                 </div>
             }
         </>

@@ -179,11 +179,48 @@ tbody tr:first-child {
 }
 
 .radio-card {
-    @apply py-4 px-8 border-4 border-white font-bold rounded
+    @apply p-2 border-2 border-white rounded;
+}
+
+.checkbox-card {
+
+}
+
+.step-top {
+    top: 20px
+}
+
+.question-nav {
+    position: fixed;
+    bottom: 0;
 }
 
 .radio-card:hover {
     cursor: pointer;
     background-color: white;
     color: #114B5F;
+}
+
+
+@media (min-width: 768px) {
+    .step-top {
+        top: 15%
+    }
+
+    .radio-card {
+        @apply p-4 border-4 border-white rounded;
+    }
+
+    .radio-card p {
+        @apply font-bold;
+        letter-spacing: 0.04rem;
+    }
+
+    .question-nav {
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
 }

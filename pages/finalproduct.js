@@ -8,10 +8,7 @@ function FinalProduct() {
     function removeProduct() {
         localStorage.removeItem('ratingData');
         localStorage.removeItem('selectedClothing');
-        localStorage.removeItem('muaData');
-        localStorage.removeItem('rutData');
-        localStorage.removeItem('ounData');
-
+        localStorage.removeItem('flowData');
     }
 
     return (
@@ -20,12 +17,11 @@ function FinalProduct() {
 
             <div className="w-screen h-screen bg-blue">
                 <div className="container">
-                    <div className="row pb-32">
+                    <div className="row pb-24 pt-24">
                         <div className="col text-white">
                             <h1 className="text-center font-black">Herzliche Gratulation zu deinem Rating!</h1>
                             <p className="text-center pt-4">Du siehst nun dein Rating und ich hoffe, du hattest Spass
-                                meine
-                                Diplomarbeit zu entdecken!</p>
+                                meine Diplomarbeit zu entdecken!</p>
                         </div>
                     </div>
                     <GeneratedProduct/>

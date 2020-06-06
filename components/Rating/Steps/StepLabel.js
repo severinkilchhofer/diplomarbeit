@@ -1,79 +1,66 @@
 import React from "react"
+import {useForm} from "react-hook-form";
 
-
-const StepUrlaubstage = (props) => {
-
-
+const StepLabel = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
                 <div className="w-full pt-4 lg:col-12 text-white">
-                    <h1>Wie viele Urlaubstage und Freitage werden gewährleistet?</h1>
+                    <h1>Haben die Produkte ein Label, welches von unabhängigen Stellen geprüft werden kann?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '10'}
+                                   defaultChecked={props.data.label === '2'}
                                    className="card-input-element"
-                                   name="urlaubstage"
-                                   value="10"
+                                   name="label"
+                                   value="2"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>mehr als 5 Wochen Ferien</p>
+                                <p>GOTS – Global organic textile standard</p>
                             </div>
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '8'}
+                                   defaultChecked={props.data.label === '2'}
                                    className="card-input-element"
-                                   name="urlaubstage"
-                                   value="8"
+                                   name="label"
+                                   value="2"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>4-5 Wochen Ferien</p>
+                                <p>RWS - Responsible Wool Standard</p>
                             </div>
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '6'}
+                                   defaultChecked={props.data.label === '2'}
                                    className="card-input-element"
-                                   name="urlaubstage"
-                                   value="6"
+                                   name="label"
+                                   value="2"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>3-4 Wochen Ferien</p>
+                                <p>RDS - Responsible Down Standard</p>
                             </div>
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '4'}
+                                   defaultChecked={props.data.label === '2'}
                                    className="card-input-element"
-                                   name="urlaubstage"
-                                   value="4"
+                                   name="label"
+                                   value="2"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>2-3 Wochen Ferien</p>
+                                <p>RCS - Recycled Claim Standard</p>
                             </div>
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '3'}
+                                   defaultChecked={props.data.label === '0'}
                                    className="card-input-element"
-                                   name="urlaubstage"
-                                   value="3"
+                                   name="label"
+                                   value="0"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>1-3 Wochen Ferien</p>
-                            </div>
-                        </label>
-                        <label className="p-2">
-                            <input type="radio"
-                                   defaultChecked={props.data.urlaubstage === '1'}
-                                   className="card-input-element"
-                                   name="urlaubstage"
-                                   value="1"
-                                   onChange={val => props.onChange(val.target.value)}/>
-                            <div className="radio-card">
-                                <p>Weniger als 1 Woche Ferien / Keine Ferien oder Freitage</p>
+                                <p>Kein Label vorhanden</p>
                             </div>
                         </label>
                     </div>
@@ -83,4 +70,4 @@ const StepUrlaubstage = (props) => {
     )
 }
 
-export default StepUrlaubstage;
+export default StepLabel;
