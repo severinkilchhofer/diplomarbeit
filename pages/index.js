@@ -10,7 +10,7 @@ export default function IndexPage() {
         <>
             <Nav currentOpen={'intro'} bgColor={'blue'}/>
             <div className="w-screen h-screen bg-blue">
-                <div className="container">
+                <div className="container pt-8 sm:pt-24">
                     <div className="row pb-4 sm:pb-32">
                         <div className="col text-white">
                             <h1 className="text-center font-black">Sustainable Fashion Rating</h1>
@@ -27,7 +27,6 @@ export default function IndexPage() {
                                   kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}
                                   subratings={[8.3, 8.2, 8.4, 8.3]}/>
                     </div>
-
                 </div>
             </div>
 
@@ -64,7 +63,7 @@ export default function IndexPage() {
                                 frameBorder="0"
                                 allowFullScreen>
                         </iframe>
-                        <p className="pt-3">Im Video der Organisation Fashion Revolution wird die Notwendigkeit auf
+                        <p className="pt-3 text-darkgray">Im Video der Organisation Fashion Revolution wird die Notwendigkeit auf
                             Transparenz in der
                             Textilbranche mit einem Experiment klar und deutlich aufgezeigt.</p>
                     </div>

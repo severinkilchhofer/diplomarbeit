@@ -9,7 +9,7 @@ const Energieverbrauch = () => {
                 </div>
 
                 <div className="pt-4 sm:pl-32">
-                    <h3>Energieverbrauchskennzeichnung</h3>
+                    <h5>Energieverbrauchskennzeichnung</h5>
                     <p className="mb-4">Die Kennzeichnung des Energieverbrauchs von unterschiedlichen
                         Gütern (Geräte, Gebäude, Autos) dient zur Unterstützung der Kaufentscheidung, indem sie Auskunft
                         über die Energieeffizienz bei der Nutzung geben soll.

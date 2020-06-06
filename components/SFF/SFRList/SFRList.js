@@ -3,7 +3,7 @@ import React from "react";
 const SFRList = () => {
     return (
         <div>
-            <h2 className="text-blue">Sustainable Fashion Rating </h2>
+            <h2 className="text-blue font-black">Sustainable Fashion Rating</h2>
             <p className="pb-12">So funktioniert meine Lösung des Sustainable Fashion Ratings konkret. <br/>Für alle
                 nachfolgenden Teilschritte stellt die Sustainable Fashion Foundation eine Plattform bereit.</p>
             <div className="row pb-4">

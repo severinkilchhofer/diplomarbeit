@@ -26,7 +26,7 @@ export default () => (
                 </div>
             </div>
         </div>
-        <div className="container pt-32">
+        <div className="container pt-32 pb-64">
             <div className="row">
                 <div className="col-12">
                     <h2>In anderen Branchen ist Transparenz bereits selbstverständlich.</h2>

@@ -17,7 +17,7 @@ const StepArbeitswoche = (props) => {
                                    value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Weniger als 42 Stunden</p>
+                                <p>Weniger als 43 Stunden</p>
                             </div>
                         </label>
                         <label className="p-2">

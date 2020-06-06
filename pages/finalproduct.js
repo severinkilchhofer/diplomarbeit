@@ -5,33 +5,27 @@ import Link from "next/link";
 
 function FinalProduct() {
 
-    function removeProduct() {
-        localStorage.removeItem('ratingData');
-        localStorage.removeItem('selectedClothing');
-        localStorage.removeItem('flowData');
-    }
-
     return (
         <>
             <Nav currentOpen={'rating'} bgColor={'blue'}/>
 
             <div className="w-screen h-screen bg-blue">
                 <div className="container">
-                    <div className="row pb-24 pt-24">
-                        <div className="col text-white">
-                            <h1 className="text-center font-black">Herzliche Gratulation zu deinem Rating!</h1>
-                            <p className="text-center pt-4">Du siehst nun dein Rating und ich hoffe, du hattest Spass
-                                meine Diplomarbeit zu entdecken!</p>
+                    <div className="row pb-8 pt-24">
+                        <div className="lg:col-8 text-white sm:pl-6">
+                            <h1 className="font-black">Herzliche Gratulation zu deinem Rating!</h1>
+                            <p className="pt-4">Hier siehst du dein erstelltes Produkt inklusive dem berechneten Rating.
+                                Auf dem Ratingbatch findest du die Inforamtionen wie dein Rating berechnet wurde.</p>
                         </div>
                     </div>
+
                     <GeneratedProduct/>
 
                     <div className="flex items-center justify-end pt-4">
                         <Link href={'/rating'} as={process.env.BACKEND_URL + '/rating'}>
                             <button
-                                className="p-4 m-4 bg-transparent text-white font-bold rounded border-2 border-white"
-                                onClick={() => removeProduct()}>
-                                Neues Produkt erstellen
+                                className="p-4 m-4 bg-transparent text-white font-bold rounded border-2 border-white">
+                                Zu Rating erstellen zurück
                             </button>
                         </Link>
 

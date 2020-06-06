@@ -34,12 +34,12 @@ const ShopItem = (props) => {
         <section className="m-2 leading-normal w-full">
             <div className="bg-white shadow-2xl rounded overflow-hidden m-4 sm:flex">
                 <div
-                    className="flex justify-center bg-gray m-5 p-5 rounded h-48 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
+                    className="flex justify-center bg-gray m-0 sm:m-5 p-5 sm:p-5 rounded h-32 sm:h-auto sm:w-56 md:w-1/3 flex-none rounded overflow-hidden">
                     {props.kleidungsstueck}
                 </div>
 
                 <div className="px-6 py-4">
-                    <p className="mb-2 font-bold text-gray">{props.brand}</p>
+                    <p className="mb-2 font-bold text-blue">{props.brand}</p>
                     <h2>{props.name}</h2>
                     <p className="mb-4 text-black text-sm">{props.description}</p>
                     <p className="mb-2 font-bold">CHF {props.price}.-</p>

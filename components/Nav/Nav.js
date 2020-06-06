@@ -41,14 +41,14 @@ const Nav = (props) => {
                                 <a>Sustainable Fashion Foundation</a>
                             </Link>
                         </li>
-                        <li className={`${props.currentOpen === 'fazit' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
-                            <Link href={'/fazit'} as={process.env.BACKEND_URL + '/fazit'}>
-                                <a>Zusammenfassung</a>
-                            </Link>
-                        </li>
                         <li className={`${props.currentOpen === 'rating' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
                             <Link href={'/rating'} as={process.env.BACKEND_URL + '/rating'}>
                                 <a>Eigenes Rating erstellen</a>
+                            </Link>
+                        </li>
+                        <li className={`${props.currentOpen === 'fazit' ? `text-red` : `text-white`} pb-4 hover:text-red`}>
+                            <Link href={'/fazit'} as={process.env.BACKEND_URL + '/fazit'}>
+                                <a>Zusammenfassung</a>
                             </Link>
                         </li>
                     </ul>

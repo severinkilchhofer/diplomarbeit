@@ -224,3 +224,25 @@ tbody tr:first-child {
         margin: 0 auto;
     }
 }
+
+#reversedRange {
+    direction: rtl;
+}
+
+
+.scroll-container {
+    width: 1500px;
+}
+
+@media (min-width: 768px) {
+    .scroll-container {
+        width: 1500px;
+    }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    .scroll-container {
+        width: 2500px;
+    }
+}

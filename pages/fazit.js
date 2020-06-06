@@ -12,9 +12,7 @@ export default () => (
                 <div className="row flex">
                     <div className="lg:col-6">
                         <h1 className="text-white font-black">Zusammenfassung und Fazit</h1>
-                        <p className="text-white pb-16">Um zu erleben, wie ein Hersteller sein Rating erlangen kann,
-                            habe ich
-                            einen vereinfachten Workflow erstellt, den es erlaubt sein eigenes Rating zu berechnen.</p>
+                        <p className="text-white pb-16">Du bist nun fast am Ende meiner Diplomarbeit angelangt. Es wird also Zeit für eine kurze Zusammenfassung.</p>
                     </div>
                 </div>
             </div>
@@ -29,8 +27,16 @@ export default () => (
                     <MehrwertTabs data={MehrwertData}/>
                 </div>
             </div>
+
+            <div className="row">
+                <div className="pt-32 pb-4 lg:offset-2 lg:col-8">
+                    <h2>Zusammenfassung</h2>
+                </div>
+                <div className="lg:col-8 lg:offset-2">
+                    <p>Bald isches fertig...</p>
+                </div>
+            </div>
         </div>
-        <FooterNav navTextBack='Sustainable Fashion Foundation' navLinkBack='sff'
-                   navTextForward='Eigenes Rating erstellen' navLinkForward='rating'/>
+        <FooterNav navTextBack='Eigenes Rating erstellen' navLinkBack='rating'/>
     </>
 )

@@ -13,7 +13,7 @@ const StepLieferanten = (props) => {
         <>
             <div className="row pt-4 text-white">
                 <div className="w-full pt-4 lg:col-12 text-white">
-                    <h1>Veröffentlicht {getHerstellerName().name} ihre Lieferanten von Rohmaterialien?</h1>
+                    <h1>Veröffentlicht {getHerstellerName().name} Informationen über ihre Lieferanten von Rohmaterialien?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
                         <label className="p-2">
                             <input type="radio"
@@ -34,7 +34,7 @@ const StepLieferanten = (props) => {
                                    value="5"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Teilweise bekannt</p>
+                                <p>Einzelne sind bekannt</p>
                             </div>
                         </label>
                         <label className="p-2">
@@ -45,7 +45,7 @@ const StepLieferanten = (props) => {
                                    value="1"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Nicht bekannt</p>
+                                <p>Keine Informationen sind bekannt</p>
                             </div>
                         </label>
                     </div>

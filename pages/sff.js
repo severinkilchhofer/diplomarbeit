@@ -25,8 +25,6 @@ export default () => (
                             Regelung im Online Textilhandel funktionieren könnte.</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div className="container pt-32 ">
@@ -189,6 +187,6 @@ export default () => (
         </div>
 
         <FooterNav navTextBack='Recherche und Erkenntnisse' navLinkBack='recherche'
-                   navTextForward='Zusammenfassung' navLinkForward='fazit'/>
+                   navTextForward='Eigenes Rating erstellen' navLinkForward='rating'/>
     </>
 )

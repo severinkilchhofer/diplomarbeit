@@ -23,7 +23,7 @@ const StepVerarbeitungsbetriebe = (props) => {
                                    value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Ja, alle sind bekannt</p>
+                                <p>Ja, alle sind öffentlich bekannt</p>
                             </div>
                         </label>
                         <label className="p-2">
@@ -34,7 +34,7 @@ const StepVerarbeitungsbetriebe = (props) => {
                                    value="5"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Teilweise bekannt</p>
+                                <p>Einzelne sind öffentlich bekannt</p>
                             </div>
                         </label>
                         <label className="p-2">
@@ -45,7 +45,7 @@ const StepVerarbeitungsbetriebe = (props) => {
                                    value="1"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
-                                <p>Nicht bekannt</p>
+                                <p>Keine sind bekannt</p>
                             </div>
                         </label>
                     </div>
