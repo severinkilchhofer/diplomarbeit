@@ -72,7 +72,7 @@ const ShopItem = (props) => {
                         </g>
                     </svg>
                 </button>
-                <RatingModal rating={props.rating}/>
+                <RatingModal rating={props.rating} subratings={props.subratings}/>
             </Modal>
         </section>
     )

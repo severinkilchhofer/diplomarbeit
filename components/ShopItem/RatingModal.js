@@ -1,6 +1,9 @@
 import React from "react";
 
 const RatingModal = (props) => {
+
+
+
     return (
         <div className="p-2 rounded">
             <h5>Sustainable Fashion Rating</h5>
@@ -13,11 +16,11 @@ const RatingModal = (props) => {
                 </div>
                 <div className="pt-4 md:pr-8 min-w-full">
                     <p className="mb-2 font-bold">Ratingzusammenstellung</p>
-                    <p className="mb-2"><strong>8.3</strong> -> Menschen und Arbeitsrechte&nbsp;(30%)</p>
-                    <p className="mb-2"><strong>8.2</strong> -> Ökologie und Nachhaltigkeit&nbsp;(30%)</p>
-                    <p className="mb-2"><strong>8.4</strong> -> Rückverfolgbarkeit und Transparenz&nbsp;(30%)</p>
+                    <p className="mb-2"><strong>{props.subratings[0]}</strong> -> Menschen und Arbeitsrechte&nbsp;(33.33%)</p>
+                    <p className="mb-2"><strong>{props.subratings[1]}</strong> -> Ökologie und Nachhaltigkeit&nbsp;(33.33%)</p>
+                    <p className="mb-2"><strong>{props.subratings[2]}</strong> -> Rückverfolgbarkeit und Transparenz&nbsp;(33.33%)</p>
                     <hr/>
-                    <p className="mt-2"><strong>8.3</strong> -> Gesamtrating</p>
+                    <p className="mt-2"><strong>{props.subratings[3]}</strong> -> Gesamtrating</p>
                 </div>
 
             </div>

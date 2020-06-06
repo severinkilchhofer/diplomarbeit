@@ -24,7 +24,8 @@ export default function IndexPage() {
                                   description={'Das Männer T-Shirt in Kontrastfarbe und Rundhals ist aus regenerierten Fischernetzen und Nylon-Resten, sogenanntes ECONYL®-Garn hergestellt. Die T-Shirts von The South Mountain werden in der Schweiz unter fairen Arbeitsbedingungen und einem minimalen Transportweg produziert.'}
                                   price={65}
                                   rating={8}
-                                  kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}/>
+                                  kleidungsstueck={<Shirt fill={'#D1495B'} pattern={'#CCE6F6'}/>}
+                                  subratings={[8.3, 8.2, 8.4, 8.3]}/>
                     </div>
 
                 </div>

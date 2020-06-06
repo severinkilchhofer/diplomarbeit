@@ -2,6 +2,8 @@ import Nav from "../components/Nav/Nav";
 import React, {useEffect, useState} from 'react'
 import MultiStepForm from "../components/Rating/MultiStepForm/MultiStepForm";
 import FooterNav from "../components/FooterNav/FooterNav";
+import CreateRating from "../components/Rating/CreateRating/CreateRating";
+import Flow from "../components/Rating/Flow/Flow";
 
 
 function Rating() {
@@ -10,7 +12,7 @@ function Rating() {
     return (<>
             {!clicked ?
                 <div>
-                <Nav currentOpen={'rating'} bgColor={'blue'}/>
+                    <Nav currentOpen={'rating'} bgColor={'blue'}/>
                     <div className="w-screen h-screen bg-blue">
                         <div className="container sm:pt-32">
                             <div className="row flex">
@@ -42,11 +44,8 @@ function Rating() {
 
                 :
 
-                <div>
-                <Nav currentOpen={'rating'} bgColor={'white'}/>
-                    <div className="container">
-                        <MultiStepForm/>
-                    </div>
+                <div className="bg-blue">
+                    <Flow/>
                 </div>
             }
         </>

@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import ShopItem from "../../ShopItem/ShopItem";
 import Shirt from "../../Shirt/Shirt";
 import Pullover from "../../Pullover/Pullover";
@@ -10,31 +10,29 @@ const GeneratedProduct = () => {
 
                 const ratingData = localStorage.getItem('ratingData');
                 const selectedClothing = localStorage.getItem('selectedClothing');
-                const muaData = localStorage.getItem('muaData');
-                const rutData = localStorage.getItem('rutData');
-                const ounData = localStorage.getItem('ounData');
+                const flowData = localStorage.getItem('flowData');
 
                 let data = [];
-                data.push(JSON.parse(ratingData), JSON.parse(selectedClothing), JSON.parse(muaData), JSON.parse(rutData), JSON.parse(ounData));
+                data.push(JSON.parse(ratingData), JSON.parse(selectedClothing), JSON.parse(flowData));
                 return data;
             }
         }
     )
 
-    const mua = finalProductState ? finalProductState[2] : ''
-    const muaBerechnet = mua ? Number(mua.arbeitszeit) + Number(mua.ferien) + Number(mua.gesundheit) + Number(mua.kinderarbeit) + Number(mua.ueberstunden) : '';
-    const subRatingMua = muaBerechnet / 5
 
-    const rut = finalProductState ? finalProductState[3] : ''
-    const rutBerechnet = rut ? Number(rut.materialdeklaration) + Number(rut.rohmaterialien) + Number(rut.verarbeitungsbetriebe) + rut.label.length : ''
-    const subRatingRut = rutBerechnet / 4
 
-    const oun = finalProductState ? finalProductState[4] : ''
-    const ounBerechnet = rut ? Number(oun.abwasser) + Number(oun.rohstoffe) + Number(oun.selteneMetalle) + Number(oun.transportweg) : '';
-    const subRatingOun = ounBerechnet / 4
+    const ratingZahlen = finalProductState ? finalProductState[2] : '';
+    const muaBerechnet = finalProductState ? Number(ratingZahlen.arbeitswoche) + Number(ratingZahlen.urlaubstage) + Number(ratingZahlen.sicherheit) + Number(ratingZahlen.kinderarbeit) + Number(ratingZahlen.ueberstunden) : '';
+    const subRatingMua = muaBerechnet / 5;
 
+    const ounBerechnet = finalProductState ? Number(ratingZahlen.abwasser) + Number(ratingZahlen.rohstoffe) + Number(ratingZahlen.selteneMetalle) + Number(ratingZahlen.transportweg) : '';
+    const subRatingOun = ounBerechnet / 4;
+
+    const rutBerechnet = finalProductState ? Number(ratingZahlen.materialdeklaration) + Number(ratingZahlen.lieferanten) + Number(ratingZahlen.verarbeitungsbetriebe) + Number(ratingZahlen.label) : ''
+    const subRatingRut = rutBerechnet / 4;
 
     const overallRating = (subRatingMua + subRatingRut + subRatingOun) / 3;
+
 
     const renderSwitch = ({selected}) => {
         switch (selected) {
@@ -59,7 +57,8 @@ const GeneratedProduct = () => {
                           description={finalProductState[0].beschreibung}
                           price={finalProductState[0].price}
                           rating={Math.round(overallRating)}
-                          kleidungsstueck={renderSwitch({selected: finalProductState[1].selected})}/>
+                          kleidungsstueck={renderSwitch({selected: finalProductState[1].selected})}
+                          subratings={[subRatingMua, subRatingRut, subRatingOun, Math.round(overallRating * 100) / 100]}/>
                 : ''}
         </div>
     );
