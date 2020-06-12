@@ -2,8 +2,22 @@ import Nav from "../components/Nav/Nav";
 import Energieverbrauch from "../components/Recherche/Energieverbrauch/Energieverbrauch";
 import Onlineshops from "../components/Recherche/Onlineshops/Onlineshops";
 import FooterNav from "../components/FooterNav/FooterNav";
+import useWindowSize from '@rehooks/window-size';
+import OnlineshopsMobile from "../components/Recherche/Onlineshops/OnlineshopsMobile";
 
-export default () => (
+
+
+export default () => {
+
+    const windowSize = () => {
+        if (typeof window !== 'undefined') {
+            const width = useWindowSize();
+            return width.innerWidth;
+        }
+    }
+
+
+    return(
     <div style={{overflow: 'hidden'}}>
         <Nav currentOpen={'recherche'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
@@ -26,7 +40,7 @@ export default () => (
                 </div>
             </div>
         </div>
-        <div className="container pt-32 pb-64">
+        <div className="container pt-32 pb-16 sm:pb-64">
             <div className="row">
                 <div className="col-12">
                     <h2>In anderen Branchen ist Transparenz bereits selbstverständlich.</h2>
@@ -38,10 +52,14 @@ export default () => (
                 </div>
             </div>
         </div>
-        <Onlineshops/>
+
+        {console.log(windowSize())}
+        {windowSize() > 480 ? <Onlineshops/> : <OnlineshopsMobile/>}
+        {/*<Onlineshops/>*/}
 
 
-        <div className="container pt-32">
+
+        <div className="container pt-16 sm:pt-32">
             <div className="row">
                 <div className="col-12">
                     <h2>Stellungsnahmen auf meine Anfragen bezüglich der Diplomarbeit.</h2>
@@ -50,11 +68,11 @@ export default () => (
             <div className="row pb-32">
                 <div className="lg:col-12">
                     <div className="lg:col-8 bg-lightblue rounded">
-                        <div className="p-16">
+                        <div className="p-4 sm:p-16">
                             <p className="font-bold text-blue pb-8">Frage an Sebastian Lanz | <span
                                 className="font-normal"> Gründer des Kleiderladens
                                 RRRevlove</span></p>
-                            <h5 className="pb-8">Was denkst du, sind die heutigen Implementierungsschwierigkeiten, die
+                            <h5 className="pb-8">Was denkst du, sind die heutigen Schwierigkeiten, die
                                 Kleideronlineshops
                                 heutzutage daran hindern, mehr Informationen bezüglich Nachhaltigkeit auf ihrer Webseite
                                 zu zeigen?</h5>
@@ -70,7 +88,7 @@ export default () => (
             <div className="row pb-32">
                 <div className="lg:col-12">
                     <div className="lg:offset-4 lg:col-8 bg-lightblue rounded">
-                        <div className="p-16">
+                        <div className="p-4 sm:p-16">
                             <p className="font-bold text-blue pb-8">Frage an Susanne Rudolf | <span
                                 className="font-normal">Mitarbeiterin der Geschäftsstelle von Fashion Revolution Schweiz</span>
                             </p>
@@ -87,4 +105,4 @@ export default () => (
         <FooterNav navTextBack='Intro' navLinkBack='index'
                    navTextForward='Sustainable Fashion Foundation' navLinkForward='sff'/>
     </div>
-)
+)}
