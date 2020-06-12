@@ -96,7 +96,7 @@ export default () => (
                                      description={'In dieser Kategorie wird der Soziale Aspekt der Marke untersucht. Dies geschieht für die eigenen Mitarbeiter als auch für die Arbeitnehmer in der Lieferkette. Punkte werden ausserdem für Arbeits- und Lohnbedinungen vergeben, sowie für die Massnahmen zum Schutz vor Arbeitsrisiken der Arbeitnehmer.'}
                                      imageName={'menschen_arbeitsrechte.svg'}
                                      imageAlt={'Illustration von zwei Menschen in einem Park'}
-                                     gewichtung={'Gewichtung: 33.33%'}
+                                     gewichtung={'Gewichtung: 33%'}
                     />
                 </div>
 
@@ -107,7 +107,7 @@ export default () => (
                                      description={'Um eine langfristige Nachhaltigkeit zu garantieren, wird die Produktionskette der Marke untersucht. Punkte werden unteranderem aufgrund der Verwendung nachhaltiger Materialien, einer emissionsarmen Produktion und dem Gebrauch von nachhaltigen Ressourcen vergeben.'}
                                      imageName={'oekologie_nachhaltigkeit.svg'}
                                      imageAlt={'Illustration eines Herzes mit Pflanzen'}
-                                     gewichtung={'Gewichtung: 33.33%'}
+                                     gewichtung={'Gewichtung: 33%'}
                     />
                 </div>
                 <div className="lg:col-6 pt-4 sm:pt-0">
@@ -115,7 +115,7 @@ export default () => (
                                      description={'Die Transparenz einer Marke wird mit den Daten der Lieferanten geprüft. Auf der einen Seite werden die Informationen der Herstellungsbetriebe, auf der anderen werden die der Verarbeitungsfirmen angeschaut. Zusätzlich werden Details, wie die Adresse des Lieferanten, die Anzahl der Beschäftigten sowie Aufschlüsselung nach Geschlecht geprüft.'}
                                      imageName={'rueckverfolgbarkeit_transparenz.svg'}
                                      imageAlt={'Illustration einer Fabrik mit Lastwagen'}
-                                     gewichtung={'Gewichtung: 33.33%'}
+                                     gewichtung={'Gewichtung: 33%'}
                     />
                 </div>
             </div>
@@ -138,13 +138,9 @@ export default () => (
 
             <div className="row">
                 <div className="lg:col-12 bg-lightblue text-center pt-10 pb-6">
-                    <h5>1/3 * Subrating Menschen und Arbeitsrechte + 1/3 * Subrating Ökologie und Nachhaltigkeit + 1/3 *
-                        Subrating Rückverfolgbarkeit und Transparenz = Gesamtrating</h5>
-                </div>
-                <div className="lg:col-12 pb-4">
-                    <p className="text-sm">S1 = Subrating Produkt | S2 = Subrating Menschen und Arbeitsrechte | S3 =
-                        Subrating Ökologie und
-                        Nachhaltigkeit | S4 = Subrating Rückverfolgbarkeit und Transparenz</p>
+                    <h5 className="font-normal">(&#8531; &#215; Subrating Menschen und Arbeitsrechte)
+                        + (&#8531; &#215; Subrating Ökologie und Nachhaltigkeit) + (&#8531; &#215;
+                        Subrating Rückverfolgbarkeit und Transparenz) = Gesamtrating</h5>
                 </div>
             </div>
 

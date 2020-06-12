@@ -50,34 +50,34 @@ export default () => (
             <div className="row pb-32">
                 <div className="lg:col-12">
                     <div className="lg:col-8 bg-lightblue rounded">
-                        <div className="p-5">
+                        <div className="p-16">
                             <p className="font-bold text-blue pb-8">Frage an Sebastian Lanz | <span
                                 className="font-normal"> Gründer des Kleiderladens
                                 RRRevlove</span></p>
-                            <p className="pb-4">Was denkst du, sind die heutigen Implementierungsschwierigkeiten, die
+                            <h5 className="pb-8">Was denkst du, sind die heutigen Implementierungsschwierigkeiten, die
                                 Kleideronlineshops
                                 heutzutage daran hindern, mehr Informationen bezüglich Nachhaltigkeit auf ihrer Webseite
-                                zu zeigen?</p>
-                            <h5>«Momentan erhalten wir die Kleiderinformationen in sehr unterschiedlichen Formaten,
+                                zu zeigen?</h5>
+                            <p>«Momentan erhalten wir die Kleiderinformationen in sehr unterschiedlichen Formaten,
                                 welche wir manuell von Hand in unser System eintragen müssen, damit diese im Onlineshop
                                 angezeigt werden.
                                 Am liebsten hätte ich als Onlineshop ein einheitliches Format der Kleiderdaten der
-                                Hersteller.»</h5>
+                                Hersteller.»</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row pb-32">
                 <div className="lg:col-12">
                     <div className="lg:offset-4 lg:col-8 bg-lightblue rounded">
-                        <div className="p-5">
+                        <div className="p-16">
                             <p className="font-bold text-blue pb-8">Frage an Susanne Rudolf | <span
                                 className="font-normal">Mitarbeiterin der Geschäftsstelle von Fashion Revolution Schweiz</span>
                             </p>
-                            <p className="pb-4">Wie transparent liefern die Marken ihre Herstellungsangaben? </p>
-                            <h5>«Die Angabe der Lieferkette wird von den Marken sehr unterschiedlich gehandhabt. Einige
+                            <h5 className="pb-8">Wie transparent liefern die Marken ihre Herstellungsangaben? </h5>
+                            <p>«Die Angabe der Lieferkette wird von den Marken sehr unterschiedlich gehandhabt. Einige
                                 zeigen die genauen Herstellungsprozesse auf, andere hingegen geben kaum Daten
-                                preis.»</h5>
+                                preis.»</p>
                         </div>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ export const ProductData = [
             rows: [
                 {id: 0, info: 'Subrating Menschen und Arbeitsrechte', bspData: '8.3'},
                 {id: 1, info: 'Kinderarbeit', bspData: 'Keine Kinderarbeit (10)'},
-                {id: 2, info: 'Arbeitszeiten & Ruhepausen', bspData: 'Gemäss CH-Gesetz: 42h Arbeitswoche mit 45min Pause (10)'},
+                {id: 2, info: 'Arbeitszeiten & Ruhepausen', bspData: '42h Arbeitswoche mit 45min Pause (10)'},
                 {id: 3, info: 'Gesundheit & Sicherheit', bspData: 'Tragen von Handschuhen bei Verarbeitung der Nylon-Netze (10)'},
                 {id: 4, info: 'Lebensbedingungen & Schlafsäle', bspData: 'Arbeiter können nach Hause zum Schlafen (10)'},
                 {id: 5, info: 'Löhne und finanzielle Leistungen (z.B. Prämien, Versicherungen, Sozialversicherung, Renten)', bspData: 'In Italien werden keine Sozialleistungen bezahlt, in der Schweiz schon (8)'},

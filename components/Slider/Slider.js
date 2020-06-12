@@ -11,7 +11,7 @@ const Slider = ({children}) => {
             slidesToScroll: 1,
             fade: true,
             autoplay: true,
-            autoplaySpeed: 7000
+            autoplaySpeed: 6000
         };
 
         return (

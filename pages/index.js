@@ -30,31 +30,35 @@ export default function IndexPage() {
                 </div>
             </div>
 
-            <Slider>
-                <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <div className="container">
-                        <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74 auf
-                            130 Milliarden Kleidungsstücken mehr als verdoppelt.</h1>
-                        <p>(Euromonitor, 2020)</p>
-                    </div>
-                </div>
-                <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <div className="container">
-                        <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000 Mikrofasern
-                            aus unserer Kleidung ins Abwasser gelangen.</h1>
-                        <p>(Napper und Thompson, 2016)</p>
-                    </div>
-                </div>
-                <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
-                    <div className="container">
-                        <h1 className="text-blue">Nicht jeder hat die Zeit, um zu entziffern, unter welchen
-                            Herstellungsbedingungen ein
-                            Kleidungsstück produziert wurde.</h1>
-                        <p>(Fashion Transparency Index Report, 2020)</p>
-                    </div>
-                </div>
-            </Slider>
+            <div className="p-10 sm:p-16"/>
 
+                <Slider>
+                    <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
+                        <div className="container">
+                            <h1 className="text-blue">Der weltweite Textilverbrauch hat sich von 2005 bis 2019 von 74
+                                auf
+                                130 Milliarden Kleidungsstücken mehr als verdoppelt.</h1>
+                            <p>(Euromonitor, 2020)</p>
+                        </div>
+                    </div>
+                    <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
+                        <div className="container">
+                            <h1 className="text-blue">Bei einer durchschnittlichen Wäsche können bis zu 700.000
+                                Mikrofasern
+                                aus unserer Kleidung ins Abwasser gelangen.</h1>
+                            <p>(Napper und Thompson, 2016)</p>
+                        </div>
+                    </div>
+                    <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">
+                        <div className="container">
+                            <h1 className="text-blue">Nicht jeder hat die Zeit, um zu entziffern, unter welchen
+                                Herstellungsbedingungen ein
+                                Kleidungsstück produziert wurde.</h1>
+                            <p>(Fashion Transparency Index Report, 2020)</p>
+                        </div>
+                    </div>
+                </Slider>
+            <div className="p-4 sm:p-16"/>
             <div className="container pt-20">
                 <div className="row">
                     <div className="lg:offset-1 lg:col-8">
@@ -63,16 +67,17 @@ export default function IndexPage() {
                                 frameBorder="0"
                                 allowFullScreen>
                         </iframe>
-                        <p className="pt-3 text-darkgray">Im Video der Organisation Fashion Revolution wird die Notwendigkeit auf
+                        <p className="pt-3 text-darkgray">Im Video der Organisation Fashion Revolution wird die
+                            Notwendigkeit auf
                             Transparenz in der
                             Textilbranche mit einem Experiment klar und deutlich aufgezeigt.</p>
                     </div>
                 </div>
 
 
-                <div className="row pt-48">
-                    <div className="lg:offset-6 lg:col-6 bg-lightblue rounded">
-                        <div className="p-5">
+                <div className="row pt-48 pb-32">
+                    <div className="lg:offset-4 lg:col-8 bg-lightblue rounded">
+                        <div className="p-16">
                             <h5>Was bedeutet Transparenz im Kleiderhandel?</h5>
                             <p>Es ist die öffentliche Offenlegung von glaubwürdigen, umfassenden und vergleichbaren
                                 Daten

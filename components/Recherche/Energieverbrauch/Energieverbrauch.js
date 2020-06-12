@@ -3,7 +3,7 @@ import React from "react";
 const Energieverbrauch = () => {
     return (
         <section>
-            <div className="overflow-hidden sm:flex w-full">
+            <div className="overflow-hidden sm:flex w-full pt-8">
                 <div className="h-16 pt-4 h-auto w-1/2 sm:w-56 md:w-1/4 flex-none overflow-hidden">
                     <img src="energieklassen.svg" alt="Energieklassen"/>
                 </div>

@@ -10,10 +10,10 @@ const StepLabel = (props) => {
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.label === '2'}
+                                   defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
                                    name="label"
-                                   value="2"
+                                   value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>GOTS – Global organic textile standard</p>
@@ -21,10 +21,10 @@ const StepLabel = (props) => {
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.label === '2'}
+                                   defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
                                    name="label"
-                                   value="2"
+                                   value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>RWS - Responsible Wool Standard</p>
@@ -32,10 +32,10 @@ const StepLabel = (props) => {
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.label === '2'}
+                                   defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
                                    name="label"
-                                   value="2"
+                                   value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>RDS - Responsible Down Standard</p>
@@ -43,10 +43,10 @@ const StepLabel = (props) => {
                         </label>
                         <label className="p-2">
                             <input type="radio"
-                                   defaultChecked={props.data.label === '2'}
+                                   defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
                                    name="label"
-                                   value="2"
+                                   value="10"
                                    onChange={val => props.onChange(val.target.value)}/>
                             <div className="radio-card">
                                 <p>RCS - Recycled Claim Standard</p>
