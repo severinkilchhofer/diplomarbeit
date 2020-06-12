@@ -27,7 +27,7 @@ const RatingTabs = (props) => {
         <div id={item.id} style={visibleTab === item.id ? {} : {display: 'none'}}>
             {item.tabContent.textList.map(el =>
                 <div>
-                    <h3 className="pt-4">{el.title}</h3>
+                    <h5 className="pt-4">{el.title}</h5>
                     <p className="pb-4">{el.text}</p>
                 </div>
             )}

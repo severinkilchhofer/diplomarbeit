@@ -132,7 +132,6 @@ export default () => (
                         Ratingbatch
                         gekennzeichnet. Dieser dient zur raschen Orientierung für den Endkunden im Onlineshop und zeigt
                         auf, wie gut eine Textilmarke abgeschnitten hat.</p>
-
                 </div>
             </div>
 
@@ -157,7 +156,7 @@ export default () => (
             </div>
 
 
-            <div className="row">
+            <div className="row pb-8">
                 <div className="pt-32 pb-4 lg:offset-2 lg:col-8">
                     <h2>Datenaustausch</h2>
                     <p className="pb-4">In der Textilindustrie gibt es bereits heute eine eindeutige Produktzuweisung
@@ -173,7 +172,7 @@ export default () => (
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row pb-32">
                 <div className="col-12">
                     <img src="datenaustausch.svg" alt="Batches aller Kategorieratings"/>
                 </div>

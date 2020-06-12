@@ -46,8 +46,9 @@ const ShopItem = (props) => {
 
                     <div>
                         <button
+                            style={{height: '3.5rem', width: '3.5rem'}}
                             onClick={() => setIsOpen(true)}
-                            className={`rating${props.rating} w-16 h-16 rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
+                            className={`rating${props.rating} rounded-tl-full rounded-bl-full rounded-br-full focus:outline-none`}>
                             <p className="font-bold text-lg">{props.rating}</p>
                         </button>
                     </div>

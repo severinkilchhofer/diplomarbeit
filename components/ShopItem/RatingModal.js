@@ -9,8 +9,8 @@ const RatingModal = (props) => {
             <h5>Sustainable Fashion Rating</h5>
             <div className="overflow-hidden sm:flex w-full">
                 <div className="pt-6 p-4 h-auto w-1/2 sm:w-56 md:w-1/5 flex-none overflow-hidden">
-                    <button
-                        className={`rating${props.rating} w-16 h-16 rounded-tl-full rounded-bl-full rounded-br-full`}>
+                    <button style={{height: '3.5rem', width: '3.5rem'}}
+                        className={`rating${props.rating} rounded-tl-full rounded-bl-full rounded-br-full`}>
                         <p className="font-bold text-lg">{props.rating}</p>
                     </button>
                 </div>

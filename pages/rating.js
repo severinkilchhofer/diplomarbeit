@@ -62,8 +62,11 @@ function Rating() {
                             </div>
 
                         </div>
+                        <div className="pt-20">
+                            <FooterNav navTextBack='Sustainable Fashion Foundation' navLinkBack='sff'
+                                       navTextForward='Zusammenfassung' navLinkForward='fazit'/>
+                        </div>
                     </div>
-                    <FooterNav navTextBack='Sustainable Fashion Foundation' navLinkBack='sff' navTextForward='Zusammenfassung' navLinkForward='fazit'/>
                 </div>
 
                 :
