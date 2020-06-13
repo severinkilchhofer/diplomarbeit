@@ -135,6 +135,6 @@ export default () => (
                 </div>
             </div>
         </div>
-        <FooterNav navTextBack='Eigenes Rating erstellen' navLinkBack='rating'/>
+        <FooterNav navTextBack='Eigenes Rating erstellen' navLinkBack='rating' navTextForward='Startseite' navLinkForward='index'/>
     </>
 )

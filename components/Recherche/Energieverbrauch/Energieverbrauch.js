@@ -15,7 +15,7 @@ const Energieverbrauch = () => {
                         über die Energieeffizienz bei der Nutzung geben soll.
                     </p>
                     <p> Ein wichtiges Beispiel ist das EU-Energielabel für Elektrogeräte. Die Hersteller von
-                        Elektrogroßgeräten sind verpflichtet, als zusätzliche Information zur Kaufentscheidung
+                        Elektrogrossgeräten sind verpflichtet, als zusätzliche Information zur Kaufentscheidung
                         Energie-Labels auf den Geräten anzubringen. </p>
                 </div>
             </div>

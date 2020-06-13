@@ -18,8 +18,8 @@ export default () => (
         <div className="w-screen h-screen bg-blue">
             <div className="container pt-8 sm:pt-64">
                 <div className="row">
-                    <div className="lg:offset-2 lg:col-7">
-                        <h1 className="text-white font-black">Meine Lösung für mehr Online Transparenz im
+                    <div className="lg:offset-2 lg:col-8">
+                        <h1 className="text-white font-black">Meine Lösung für mehr Transparenz im Online
                             Textilhandel</h1>
                         <p className="text-white">Im Rahmen dieser Diplomarbeit habe ich eine fiktive Stiftung
                             «Sustainable Fashion Foundation» erfunden. Mit dieser Stiftung zeige ich auf, wie eine neue
@@ -38,7 +38,7 @@ export default () => (
             </div>
         </div>
 
-        <div className="container">
+        <div className="container" id="rating">
             <SFRList/>
             <div className="row pt-32">
                 <div className="lg:offset-2 lg:col-8">
@@ -49,7 +49,7 @@ export default () => (
                         sich auf die Informationen des Herstellers. Die Daten werden zu Menschen und Arbeitsrechte,
                         Ökologie und Nachhaltigkeit, sowie zur Rückverfolgbarkeit und Transparenz erfasst. Aus diesen
                         Kategorien wird zum Schluss das Sustainable Fashion Rating erstellt.</p>
-                    <p>Um beispielhafte Daten aufzuzeigen verwende ich mein T-Shirt Basic der Marke The South
+                    <p>Um beispielhafte Daten aufzuzeigen verwende ich mein T-Shirt Basic der fiktiven Marke The South
                         Mountain.</p>
                 </div>
             </div>
@@ -69,10 +69,10 @@ export default () => (
                     <h2>Die vier Ratingkategorien</h2>
                     <p className="pb-4">Das Sustainable Fashion Rating bezieht sich auf eine Ratingmethodik, um ein
                         Gesamtrating für ein
-                        einzelnes Kleidungsstück zu kalkulieren. Ein Produkt erhält für in den drei unten aufgelisteten
-                        Kategorien Punkte für die preisgegebenen Informationen. Diese Punkte werden von der Sustainable
+                        einzelnes Kleidungsstück zu kalkulieren. Ein Produkt erhält Punkte für die preisgegebenen Informationen in den drei unten aufgelisteten
+                        Kategorien. Diese Punkte werden von der Sustainable
                         Fashion Foundation vergeben.</p>
-                    <p className="pb-4">Alle Herstellerrelevanten Kategorien sind mit 33.33% gewichtet. Diese Kategorien
+                    <p className="pb-4">Alle Herstellerrelevanten Kategorien sind mit 33% gewichtet. Diese Kategorien
                         decken
                         die Art und Weise ab, wie Bekleidung hergestellt wird. Die Informationen über das
                         Produkt selbst werden nicht in das Rating mit einbezogen. Die Produktinformationen habe ich als
@@ -132,7 +132,7 @@ export default () => (
                         jeweilgen Produktes.</p>
                     <p className="pb-4">Nach der Berechnung wird das Gesamtrating gerundet und als Ganzzahl in einem
                         Ratingbatch
-                        gekennzeichnet. Dieser dient zur raschen Orientierung für den Endkunden im Onlineshop und zeigt
+                        gekennzeichnet. Dieser Batch dient zur raschen Orientierung für den Endkunden im Onlineshop und zeigt
                         auf, wie gut eine Textilmarke abgeschnitten hat.</p>
                 </div>
             </div>
@@ -153,7 +153,7 @@ export default () => (
                 <div className="lg:offset-2 lg:col-8">
                     <h2>Ratingzahlen</h2>
                     <img src="batches.svg" alt="Batches aller Kategorieratings"/>
-                    <p className="pt-4">Dies sind alle Ratingbatches gemäss dem Sustainable Fashion Rating. Alle zehn
+                    <p className="pt-4">Oberhalb habe ich alle Ratingbatches gemäss dem Sustainable Fashion Rating aneinandergereiht. Alle zehn
                         Ratings können
                         ebenfalls auf dem Produkt im Onlineshop durch einen Klick auf das
                         Rating angeschaut werden. So hat der Nutzer eine Relation zum Rating des Produktes, welches ihm
@@ -178,7 +178,7 @@ export default () => (
                         ich nutzen, um die Kommunikation zwischen den verschiedenen Parteien zu ermöglichen. Der Vorteil
                         besteht darin, dass diesen die Hersteller sowie die Onlineshops bereits kennen.</p>
                     <p className="pb-4">Mittels einer API (Programmierschnittstelle) werden die Produktinformationen
-                        zugänglich. Diese sind sind für den Hersteller und den Shop zugänglich. Auf der folgenden
+                        bereitgestellt. Diese sind sind für den Hersteller und den Shop zugänglich. Auf der folgenden
                         Übersicht
                         wird die Funktionalität visuell dargestellt.</p>
                 </div>

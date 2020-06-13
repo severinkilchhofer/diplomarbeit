@@ -79,7 +79,7 @@ export default function IndexPage() {
 
                 <div className="row pt-48 pb-32">
                     <div className="lg:offset-4 lg:col-8 bg-lightblue rounded">
-                        <div className="p-16">
+                        <div className="p-4 sm:p-16">
                             <h5>Was bedeutet Transparenz im Kleiderhandel?</h5>
                             <p>Es ist die öffentliche Offenlegung von glaubwürdigen, umfassenden und vergleichbaren
                                 Daten

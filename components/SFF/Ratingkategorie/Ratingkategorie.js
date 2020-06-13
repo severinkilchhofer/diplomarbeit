@@ -2,7 +2,7 @@ import React from "react"
 
 const Ratingkategorie = (props) => {
     return (
-        <div className="bg-lightblue rounded p-5 pt-12" style={{height: '550px'}}>
+        <div className="bg-lightblue rounded p-5 pt-12" style={{height: '35rem'}}>
             <div className="flex justify-center pb-6">
                 <img src={props.imageName} alt={props.imageAlt}/>
             </div>

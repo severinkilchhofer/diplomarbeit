@@ -22,7 +22,7 @@ function FinalProduct() {
                     <GeneratedProduct/>
                 </div>
                 <FooterNav navTextBack='Rating bearbeiten' navLinkBack='rating'
-                           navTextForward='Startseite' navLinkForward='index'/>
+                           navTextForward='Zusammenfassung' navLinkForward='fazit'/>
 
             </div>
 

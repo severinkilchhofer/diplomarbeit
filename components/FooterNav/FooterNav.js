@@ -17,7 +17,7 @@ const FooterNav = (props) => {
                         {props.navLinkForward && (
                             <Link href={`/ ${props.navLinkForward}`}
                                   as={`${process.env.BACKEND_URL}/${props.navLinkForward}`}>
-                                <a className="text-sm sm:text-base">{props.navTextForward} -&gt;</a>
+                                <a className="text-sm sm:text-base text-right">{props.navTextForward} -&gt;</a>
                             </Link>)}
                     </div>
                 </div>

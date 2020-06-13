@@ -17,7 +17,7 @@ export const ProductData = [
                 {id: 7, info: 'Herstellungsland', bspData: 'Schweiz'},
                 {id: 8, info: 'Materialdeklaration', bspData: '100% ECONYL®'},
                 {id: 9, info: 'Material aus', bspData: 'Italien'},
-                {id: 10, info: 'Zertifikate', bspData: 'GOTS, RWS'}
+                {id: 10, info: 'Zertifikate', bspData: 'GOTS'}
             ]
         }
     },

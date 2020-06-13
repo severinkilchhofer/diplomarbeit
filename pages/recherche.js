@@ -28,10 +28,10 @@ export default () => {
                             nachhaltige Kleidung und eine transparente Kommunikation der Onlinehändler ist so hoch wie
                             noch
                             nie. Gleichzeitig informieren sich Leute gerne vermehrt über den Herstellungsort und die
-                            Materialien der Kleider. In Ladengeschäften ist das Entehmen dieser Produktinformationen auf
+                            Materialien der Kleider. In Ladengeschäften ist das Entnehmen dieser Produktinformationen über die
                             Etiketten möglich. Im Gegensatz dazu, sind diese Informationen online nur sehr schwer
                             auffindbar. Zusätzlich gibt es davon weder eine standardisierte Datenverwaltung, noch eine
-                            einheitliche Anzeige im Onlineshop. Transparenz im Onlinehandel ist nötig!</p>
+                            einheitliche Anzeige im Onlineshop. Transparenz im Onlinehandel ist somit dringend nötig!</p>
                     </div>
 
                 </div>
@@ -67,7 +67,7 @@ export default () => {
                             <p className="font-bold text-blue pb-8">Frage an Sebastian Lanz | <span
                                 className="font-normal"> Gründer des Kleiderladens
                                 RRRevlove</span></p>
-                            <h5 className="pb-8">Was denkst du, sind die heutigen Schwierigkeiten, die
+                            <h5 className="pb-8">Was sind die heutigen Schwierigkeiten, die
                                 Kleideronlineshops
                                 heutzutage daran hindern, mehr Informationen bezüglich Nachhaltigkeit auf ihrer Webseite
                                 zu zeigen?</h5>

@@ -13,7 +13,7 @@ export const RatingTabsData = [
                 {
                     id: 1,
                     title: 'Ökologie und Nachhaltigkeit',
-                    text: 'Bei Ökologie und Nachhaltigkeit der Materialien sind ebenfalls sehr grosse Defizite vorhanden. Die verarbeiteten Stoffe sind äusserst selten rezykliert oder nachhaltig angebaut sowie seltene Rohstoffe wurden oft verwendet. Der Transportweg der Kleider ist oft sehr lange, wodurch ein grosser CO2-Fussabdruck entsteht. Hinzu kommt, dass das Abwasser oft mit giftigen Chemikalien ungereinigt in das nächste Fliessgewässer eingeleitet wird. Aus diesen Gründen haben Kleidungsstücke in diesen Rating-Kategorien oft auch keine Zertifikate.'
+                    text: 'Bei Ökologie und Nachhaltigkeit der Materialien sind ebenfalls sehr grosse Defizite vorhanden. Die verarbeiteten Stoffe sind äusserst selten rezykliert oder nachhaltig angebaut. Der Transportweg der Kleider ist oft sehr lange, wodurch ein grosser CO2-Fussabdruck entsteht. Hinzu kommt, dass das Abwasser oft mit giftigen Chemikalien ungereinigt in das nächste Fliessgewässer eingeleitet wird. Aus diesen Gründen haben Kleidungsstücke in diesen Rating-Kategorien oft auch keine Zertifikate.'
                 },
                 {
                     id: 2,
@@ -32,7 +32,7 @@ export const RatingTabsData = [
                 {
                     id: 0,
                     title: 'Menschen und Arbeitsrechte',
-                    text: 'Die Richtlinien und Verpflichtungen sowie Menschenrechte werden teilweise besser, teilweise schlechter eingehalten. Jedoch sind Mindeststandarte wie Mindestlohn oder geregelte Arbeitszeiten mit ein paar Freitagen meistens gegeben. Jedoch ist es gut möglich, dass stets mit giftigen Chemikalien und ungenügender Schutzkleidung gearbeitet wird.'
+                    text: 'Die Richtlinien und Verpflichtungen sowie Menschenrechte werden teilweise besser, teilweise schlechter eingehalten. Jedoch sind Mindeststandards wie Mindestlohn oder geregelte Arbeitszeiten mit ein paar Freitagen meistens gegeben. Es ist es gut möglich, dass stets mit giftigen Chemikalien und ungenügender Schutzkleidung gearbeitet wird.'
                 },
                 {
                     id: 1,
@@ -42,7 +42,7 @@ export const RatingTabsData = [
                 {
                     id: 2,
                     title: 'Rückverfolgbarkeit und Transparenz',
-                    text: 'Die Rückverfolgbarkeit und Transparenz ist meistens meist grob gewährleistet. Daher können die Materialien teilweise detaillierter und teilweise weniger detailliert zurückverfolgt werden. Labels sind vereinzelt vorhanden.'
+                    text: 'Die Rückverfolgbarkeit und Transparenz ist meistens grob gewährleistet. Daher können die Materialien teilweise detaillierter und teilweise weniger detailliert zurückverfolgt werden. Labels sind vereinzelt vorhanden.'
                 },
             ]
         }
@@ -56,12 +56,12 @@ export const RatingTabsData = [
                 {
                     id: 0,
                     title: 'Menschen und Arbeitsrechte',
-                    text: 'Die Richtlinien und Verpflichtungen sowie Menschenrechte werden gut bis sehr gut eingehalten. Dies bedeutet, dass nicht mit Kinderarbeit zu rechnen ist, sowie dass die Arbeitsstunden pro Woche grob denen in der Schweiz entsprechen und die Arbeitnehmer zu genügend Ruhezeiten sowie Ferien kommen. Falls giftige Substanzen eingesetzt werden, so sind die Arbeitsnehmer vollständig geschützt, wodurch ihre Gesundheit und Sicherheit nicht gefährdet wird.'
+                    text: 'Die Richtlinien und Verpflichtungen sowie Menschenrechte werden gut bis sehr gut eingehalten. Dies bedeutet, dass nicht mit Kinderarbeit zu rechnen ist, sowie dass die Arbeitsstunden pro Woche grob denen in der Schweiz entsprechen und die Arbeitnehmer zu genügend Ruhezeiten sowie Ferien kommen. Falls giftige Substanzen eingesetzt werden, so sind die Arbeitnehmer vollständig geschützt, wodurch ihre Gesundheit und Sicherheit nicht gefährdet wird.'
                 },
                 {
                     id: 1,
                     title: 'Ökologie und Nachhaltigkeit',
-                    text: 'Bei Ökologie und Nachhaltigkeit zeigt sich, dass die Kleider meistens ausschliesslich rezyklierte oder nachhaltige Materialien stammen. Da die Kleider oft nahe am Verkaufsort hergestellt werden, sind die Transportwege sehr kurz, was zu einem geringerem CO2 Fussabdruck führt. Bei der Herstellung selbst, werden die Schadstoffgrenzen eingehalten und der Wasserverbrauch wird auf ein Minimum reduziert. Solche Kleider haben oft mit ein oder mehrere Zertifikate. '
+                    text: 'Bei Ökologie und Nachhaltigkeit zeigt sich, dass die Kleider oft ausschliesslich aus rezyklierten oder nachhaltigen Materialien stammen. Da die Kleider oft nahe am Verkaufsort hergestellt werden, sind die Transportwege sehr kurz, was zu einem geringerem CO2 Fussabdruck führt. Bei der Herstellung selbst, werden die Schadstoffgrenzen eingehalten und der Wasserverbrauch wird auf ein Minimum reduziert. Solche Kleider haben häufig ein oder mehrere Zertifikate. '
                 },
                 {
                     id: 2,

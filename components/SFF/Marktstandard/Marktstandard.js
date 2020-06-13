@@ -14,7 +14,7 @@ const Marktstandard = () => {
                         in der Textilbranche schaffen. Dieses fokkusiert sich auf Nachhaltigkeit, Transparenz und
                         Menschenrechte. Hersteller von Textilprodukten sollen ihre Produkte in einem zentralen System
                         erfassen, die danach auf ihre Korrektheit geprüft werden. Auf diese Daten können Onlineshops
-                        zugreifen, um ein nachvollziehbare und transparente Informationen zu erhalten.
+                        zugreifen, um nachvollziehbare und transparente Informationen zu erhalten.
                     </p>
                 </div>
             </div>
