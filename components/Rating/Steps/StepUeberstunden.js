@@ -6,10 +6,10 @@ const StepUeberstunden = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Werden geleistete Überstunden bezahlt?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.ueberstunden === '10'}
                                    className="card-input-element"
@@ -20,7 +20,7 @@ const StepUeberstunden = (props) => {
                                 <p>Ja</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.ueberstunden === '1'}
                                    className="card-input-element"
@@ -31,7 +31,7 @@ const StepUeberstunden = (props) => {
                                 <p>Nein</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.ueberstunden === '0'}
                                    className="card-input-element"

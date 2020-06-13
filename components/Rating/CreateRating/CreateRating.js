@@ -38,7 +38,7 @@ const CreateRating = (props) => {
             <ErrorMessage errors={errors} name="price" message="Bitte einen Preis angeben"
                           as={<div className="bg-red border-red border-2 text-white p-2 mb-4 rounded" role="alert">
                           </div>}/>
-                <div className="row pt-10">
+                <div className="row pt-4 sm:pt-10">
                     <div className="lg:col-8">
                         <p className="text-white text-sm sm:text-base font-bold mb-4">Bitte erfasse deine
                             Produktinformationen</p>

@@ -12,7 +12,7 @@ function FinalProduct() {
 
             <div className="w-screen h-screen bg-blue">
                 <div className="container">
-                    <div className="row pb-8 pt-16">
+                    <div className="row pb-8 pt-4 sm:pt-16">
                         <div className="lg:col-8 text-white sm:pl-6">
                             <h1 className="font-black">Herzliche Gratulation zu deinem Rating!</h1>
                             <p className="pt-4">Hier siehst du dein erstelltes Produkt inklusive dem berechneten Rating.

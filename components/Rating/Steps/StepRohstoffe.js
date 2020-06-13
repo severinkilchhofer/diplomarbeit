@@ -12,10 +12,10 @@ const StepRohstoffe = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Verwendet {getHerstellerName().name} nachhaltige (ökologisch angebaute oder rezyklierte) Rohstoffe?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.rohstoffe === '10'}
                                    className="card-input-element"
@@ -26,7 +26,7 @@ const StepRohstoffe = (props) => {
                                 <p>Ja, ausschliesslich</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.rohstoffe === '5'}
                                    className="card-input-element"
@@ -37,7 +37,7 @@ const StepRohstoffe = (props) => {
                                 <p>Teilweise</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.rohstoffe === '1'}
                                    className="card-input-element"

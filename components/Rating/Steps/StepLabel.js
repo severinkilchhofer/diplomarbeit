@@ -5,10 +5,10 @@ const StepLabel = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Haben die Produkte ein Label, welches von unabhängigen Stellen geprüft werden kann?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
@@ -19,7 +19,7 @@ const StepLabel = (props) => {
                                 <p>GOTS – Global organic textile standard</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
@@ -30,7 +30,7 @@ const StepLabel = (props) => {
                                 <p>RWS - Responsible Wool Standard</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
@@ -41,7 +41,7 @@ const StepLabel = (props) => {
                                 <p>RDS - Responsible Down Standard</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.label === '10'}
                                    className="card-input-element"
@@ -52,7 +52,7 @@ const StepLabel = (props) => {
                                 <p>RCS - Recycled Claim Standard</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.label === '0'}
                                    className="card-input-element"

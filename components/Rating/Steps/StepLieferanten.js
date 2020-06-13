@@ -12,10 +12,10 @@ const StepLieferanten = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Veröffentlicht {getHerstellerName().name} Informationen über ihre Lieferanten von Rohmaterialien?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.lieferanten === '10'}
                                    className="card-input-element"
@@ -26,7 +26,7 @@ const StepLieferanten = (props) => {
                                 <p>Ja, alle sind bekannt</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.lieferanten === '5'}
                                    className="card-input-element"
@@ -37,7 +37,7 @@ const StepLieferanten = (props) => {
                                 <p>Einzelne sind bekannt</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.lieferanten === '1'}
                                    className="card-input-element"

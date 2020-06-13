@@ -7,10 +7,10 @@ const StepUrlaubstage = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Wie viele Urlaubstage und Freitage werden gewährleistet?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '10'}
                                    className="card-input-element"
@@ -21,7 +21,7 @@ const StepUrlaubstage = (props) => {
                                 <p>mehr als 5 Wochen Ferien</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '8'}
                                    className="card-input-element"
@@ -32,7 +32,7 @@ const StepUrlaubstage = (props) => {
                                 <p>4-5 Wochen Ferien</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '6'}
                                    className="card-input-element"
@@ -43,7 +43,7 @@ const StepUrlaubstage = (props) => {
                                 <p>3-4 Wochen Ferien</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '4'}
                                    className="card-input-element"
@@ -54,7 +54,7 @@ const StepUrlaubstage = (props) => {
                                 <p>2-3 Wochen Ferien</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '3'}
                                    className="card-input-element"
@@ -65,7 +65,7 @@ const StepUrlaubstage = (props) => {
                                 <p>1-3 Wochen Ferien</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.urlaubstage === '1'}
                                    className="card-input-element"

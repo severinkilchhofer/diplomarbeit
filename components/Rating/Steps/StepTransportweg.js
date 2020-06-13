@@ -6,7 +6,7 @@ const StepTransportweg = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1 className="pb-16">Wie viele Kilometer Transportweg legte das Kleidungstück zurück?</h1>
                     <input
                         id="reversedRange"

@@ -6,10 +6,10 @@ const StepArbeitswoche = (props) => {
     return (
         <>
             <div className="row pt-4 text-white">
-                <div className="w-full pt-4 lg:col-12 text-white">
+                <div className="w-full sm:pt-4 lg:col-12 text-white">
                     <h1>Wie viele Stunden müssen pro Woche geleistet werden?</h1>
                     <div className="mt-1 sm:mt-8 flex flex-wrap">
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.arbeitswoche === '10'}
                                    className="card-input-element"
@@ -20,7 +20,7 @@ const StepArbeitswoche = (props) => {
                                 <p>Weniger als 43 Stunden</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.arbeitswoche === '5'}
                                    className="card-input-element"
@@ -31,7 +31,7 @@ const StepArbeitswoche = (props) => {
                                 <p>43 – 50 Stunden</p>
                             </div>
                         </label>
-                        <label className="p-2">
+                        <label className="py-2 sm:px-2 w-full sm:w-auto">
                             <input type="radio"
                                    defaultChecked={props.data.arbeitswoche === '1'}
                                    className="card-input-element"
