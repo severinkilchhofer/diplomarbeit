@@ -10,12 +10,13 @@ import FooterNav from "../components/FooterNav/FooterNav";
 import {RatingTabsData} from "../components/SFF/RatingTabs/RatingTabsData";
 import RatingTabs from "../components/SFF/RatingTabs/RatingTabs";
 import React from "react";
+import ReadNextArrow from "../components/ReadNextArrow/ReadNextArrow";
 
 export default () => (
     <>
         <Nav currentOpen={'sff'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
-            <div className="container pt-0 sm:pt-32">
+            <div className="container pt-8 sm:pt-64">
                 <div className="row">
                     <div className="lg:offset-2 lg:col-7">
                         <h1 className="text-white font-black">Meine Lösung für mehr Online Transparenz im
@@ -26,8 +27,9 @@ export default () => (
                     </div>
                 </div>
             </div>
+            <ReadNextArrow id="#marktstandard"/>
         </div>
-        <div className="container pt-32 ">
+        <div className="container pt-32" id="marktstandard">
             <div className="row bg-lightblue p-4 lg:px-12 py-12 rounded mb-24">
                 <Marktstandard/>
             </div>
@@ -136,10 +138,13 @@ export default () => (
             </div>
 
             <div className="row">
-                <div className="lg:col-12 bg-lightblue text-center pt-10 pb-6">
-                    <h5 className="font-normal">(&#8531; &#215; Subrating Menschen und Arbeitsrechte)
-                        + (&#8531; &#215; Subrating Ökologie und Nachhaltigkeit) + (&#8531; &#215;
-                        Subrating Rückverfolgbarkeit und Transparenz) = Gesamtrating</h5>
+                <div className="lg:col-12 bg-lightblue">
+                    <div className="lg:col-8 lg:offset-2 pt-10 pb-6">
+                        <h5 className="font-normal text-sm sm:text-lg">(&#8531; &#215; Subrating Menschen und
+                            Arbeitsrechte)
+                            +<br/>(&#8531; &#215; Subrating Ökologie und Nachhaltigkeit) +<br/>(&#8531; &#215;
+                            Subrating Rückverfolgbarkeit und Transparenz)<br/>= Gesamtrating</h5>
+                    </div>
                 </div>
             </div>
 
@@ -148,7 +153,14 @@ export default () => (
                 <div className="lg:offset-2 lg:col-8">
                     <h2>Ratingzahlen</h2>
                     <img src="batches.svg" alt="Batches aller Kategorieratings"/>
-                    <p className="pt-4">Ratingbatches gemäss dem Sustainable Fashion Rating</p>
+                    <p className="pt-4">Dies sind alle Ratingbatches gemäss dem Sustainable Fashion Rating. Alle zehn
+                        Ratings können
+                        ebenfalls auf dem Produkt im Onlineshop durch einen Klick auf das
+                        Rating angeschaut werden. So hat der Nutzer eine Relation zum Rating des Produktes, welches ihm
+                        im Shop gerade angezeigt wird.</p>
+                    <p className="pt-4">Um das Rating und die dazugehörigen Eigenschaften genauer zu verstehen, habe ich
+                        eine zusammenfassende Ansicht der Ratings erstellt. Diese Übersicht dient zur Orientierung wie
+                        ein Rating entstehen kann.</p>
                 </div>
                 <div className="lg:col-12 pt-24">
                     <RatingTabs data={RatingTabsData}/>

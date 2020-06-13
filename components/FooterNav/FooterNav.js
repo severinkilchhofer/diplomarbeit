@@ -11,13 +11,13 @@ const FooterNav = (props) => {
                         {props.navLinkBack && (
                             <Link href={`/ ${props.navLinkBack}`}
                                   as={`${process.env.BACKEND_URL}/${props.navLinkBack}`}>
-                                <a>&lt;- {props.navTextBack}</a>
+                                <a className="text-sm sm:text-base">&lt;- {props.navTextBack}</a>
                             </Link>)}
 
                         {props.navLinkForward && (
                             <Link href={`/ ${props.navLinkForward}`}
                                   as={`${process.env.BACKEND_URL}/${props.navLinkForward}`}>
-                                <a>{props.navTextForward} -&gt;</a>
+                                <a className="text-sm sm:text-base">{props.navTextForward} -&gt;</a>
                             </Link>)}
                     </div>
                 </div>

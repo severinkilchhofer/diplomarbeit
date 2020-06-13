@@ -8,7 +8,7 @@ const Energieverbrauch = () => {
                     <img src="energieklassen.svg" alt="Energieklassen"/>
                 </div>
 
-                <div className="pt-4 sm:pl-32">
+                <div className="pt-10 sm:pt-4 sm:pl-32">
                     <h5>Energieverbrauchskennzeichnung</h5>
                     <p className="mb-4">Die Kennzeichnung des Energieverbrauchs von unterschiedlichen
                         Gütern (Geräte, Gebäude, Autos) dient zur Unterstützung der Kaufentscheidung, indem sie Auskunft

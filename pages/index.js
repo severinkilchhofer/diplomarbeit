@@ -4,6 +4,7 @@ import Slider from "../components/Slider/Slider";
 import FooterNav from "../components/FooterNav/FooterNav";
 import Shirt from "../components/Shirt/Shirt";
 import React from "react";
+import ReadNextArrow from "../components/ReadNextArrow/ReadNextArrow";
 
 export default function IndexPage() {
     return (
@@ -28,9 +29,10 @@ export default function IndexPage() {
                                   subratings={[8.3, 8.2, 8.4, 8.3]}/>
                     </div>
                 </div>
+                <ReadNextArrow id="#slider"/>
             </div>
 
-            <div className="p-10 sm:p-16"/>
+            <div className="p-10 sm:p-16" id="slider"/>
 
                 <Slider>
                     <div className="p-6 sm:p-32 lg:p-48 bg-lightblue">

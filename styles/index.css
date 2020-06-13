@@ -3,16 +3,21 @@
 @tailwind base;
 @tailwind components;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
 
 h1 {
-    @apply text-lg font-black pb-4;
+    @apply text-lgr font-black pb-4;
+    line-height: 2.3rem;
 }
 
 h2 {
-    @apply text-base font-normal pb-4;
+    @apply text-lg font-normal pb-4;
 }
 
 h3 {
@@ -20,7 +25,7 @@ h3 {
 }
 
 h5 {
-    @apply text-base font-black pb-4 text-blue;
+    @apply text-baseMobile font-bold pb-4 text-blue;
 }
 
 p {
@@ -40,7 +45,8 @@ p {
     }
 
     h5 {
-        @apply text-lg;
+        @apply text-lg font-black;
+        letter-spacing: 0.01em;
     }
 
     p {
@@ -245,5 +251,16 @@ tbody tr:first-child {
 @media (min-width: 1024px) {
     .scroll-container {
         width: 2500px;
+    }
+}
+
+.next-arrow {
+    bottom: 2%;
+    left: 50%;
+}
+
+@media (min-width: 768px) {
+    .next-arrow {
+        bottom: 5%;
     }
 }

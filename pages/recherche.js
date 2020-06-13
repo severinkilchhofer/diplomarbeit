@@ -4,8 +4,7 @@ import Onlineshops from "../components/Recherche/Onlineshops/Onlineshops";
 import FooterNav from "../components/FooterNav/FooterNav";
 import useWindowSize from '@rehooks/window-size';
 import OnlineshopsMobile from "../components/Recherche/Onlineshops/OnlineshopsMobile";
-
-
+import ReadNextArrow from "../components/ReadNextArrow/ReadNextArrow";
 
 export default () => {
 
@@ -16,16 +15,14 @@ export default () => {
         }
     }
 
-
     return(
     <div style={{overflow: 'hidden'}}>
         <Nav currentOpen={'recherche'} bgColor={'blue'}/>
         <div className="w-screen h-screen bg-blue">
-            <div className="container pt-0 sm:pt-32">
+            <div className="container pt-8 sm:pt-56">
                 <div className="row">
                     <div className="lg:offset-2 lg:col-9">
                         <h1 className="text-white font-black">Recherche und Erkenntnisse</h1>
-                        <h3 className="text-white">Problemstellung</h3>
                         <p className="text-white">Heutzutage werden unzählige Textilprodukte online bestellt. Der Bedarf
                             auf
                             nachhaltige Kleidung und eine transparente Kommunikation der Onlinehändler ist so hoch wie
@@ -39,8 +36,10 @@ export default () => {
 
                 </div>
             </div>
+            <ReadNextArrow id="#branchen"/>
         </div>
-        <div className="container pt-32 pb-16 sm:pb-64">
+
+        <div className="container pt-4 sm:pt-32 pb-16 sm:pb-64" id="branchen">
             <div className="row">
                 <div className="col-12">
                     <h2>In anderen Branchen ist Transparenz bereits selbstverständlich.</h2>
@@ -53,11 +52,7 @@ export default () => {
             </div>
         </div>
 
-        {console.log(windowSize())}
         {windowSize() > 480 ? <Onlineshops/> : <OnlineshopsMobile/>}
-        {/*<Onlineshops/>*/}
-
-
 
         <div className="container pt-16 sm:pt-32">
             <div className="row">
